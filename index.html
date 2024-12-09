@@ -1,0 +1,765 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>EC </title>
+<meta name="generator" content="WYSIWYG Web Builder 18 - http://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/E&C.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="jquery.ui.effect.min.js"></script>
+<script src="wb.panel.min.js"></script>
+<script src="searchindex.js"></script>
+<script src="wb.sitesearch.min.js"></script>
+<script>
+var features = 'toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,status=no,left=,top=,width=,height=';
+function searchPage(features)
+{
+   var element = document.getElementById('SiteSearch1');
+   window.open('sitesearch1-results.html?q='+encodeURIComponent(element.value), '', features);
+   return false;
+}
+</script>
+<script src="wwb18.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $("a[href*='#welcome']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_welcome').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#services1']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_services1').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   function onScrollservices1()
+   {
+      var $obj = $("#wb_services1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollservices1();
+   $(window).scroll(function(event)
+   {
+      onScrollservices1();
+   });
+   $("a[href*='#services2']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_services2').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   function onScrollservices2()
+   {
+      var $obj = $("#wb_services2");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollservices2();
+   $(window).scroll(function(event)
+   {
+      onScrollservices2();
+   });
+   $("a[href*='#blog']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_blog').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   function onScrollblogDividerTop()
+   {
+      var $obj = $('#blog-divider-top');
+      if (!$obj.hasClass('show') && $obj.inViewPort(false))
+      {
+         $obj.addClass('show');
+      }
+   }
+   onScrollblogDividerTop();
+   $(window).scroll(function(event)
+   {
+      onScrollblogDividerTop();
+   });
+   function onScrollblog()
+   {
+      var $obj = $("#wb_blog");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollblog();
+   $(window).scroll(function(event)
+   {
+      onScrollblog();
+   });
+   $("a[href*='#blogGrid']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_blogGrid').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   function onScrollblogGrid()
+   {
+      var $obj = $("#wb_blogGrid");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollblogGrid();
+   $(window).scroll(function(event)
+   {
+      onScrollblogGrid();
+   });
+   $("#PanelLayer").panel({animate: true, animationDuration: 500, animationEasing: 'easeOutCirc', dismissible: true, display: 'push', position: 'left'});
+   $('.OverlayMenu2 .item-has-children').children('a').on('click', function(event)
+   {
+      event.preventDefault();
+      $(this).toggleClass('submenu-open').next('.sub-menu').slideToggle(0,'linear').end().parent('.item-has-children').siblings('.item-has-children').children('a').removeClass('submenu-open').next('.sub-menu').slideUp(0,'linear');
+   });
+   $("#RollOverLayer2").hover(function(e)
+   {
+      $(".hover", this).css("left","100%");
+      $(".hover", this).css("zIndex", "999");
+      $(".hover", this).stop().animate({left:"0px"},{queue:false,duration:1000});
+   }, function()
+   {
+      $(".hover", this).stop().animate({left:"100%"},{queue:false,duration:1000});
+   });
+   $("#RollOverLayer1").hover(function(e)
+   {
+      $(".hover", this).css("left","100%");
+      $(".hover", this).css("zIndex", "999");
+      $(".hover", this).stop().animate({left:"0px"},{queue:false,duration:1000});
+   }, function()
+   {
+      $(".hover", this).stop().animate({left:"100%"},{queue:false,duration:1000});
+   });
+   $("#RollOverLayer3").hover(function(e)
+   {
+      $(".hover", this).css("left","100%");
+      $(".hover", this).css("zIndex", "999");
+      $(".hover", this).stop().animate({left:"0px"},{queue:false,duration:1000});
+   }, function()
+   {
+      $(".hover", this).stop().animate({left:"100%"},{queue:false,duration:1000});
+   });
+   $("#RollOverLayer4").hover(function(e)
+   {
+      $(".hover", this).css("left","100%");
+      $(".hover", this).css("zIndex", "999");
+      $(".hover", this).stop().animate({left:"0px"},{queue:false,duration:1000});
+   }, function()
+   {
+      $(".hover", this).stop().animate({left:"100%"},{queue:false,duration:1000});
+   });
+   $("#RollOverLayer5").hover(function(e)
+   {
+      $(".hover", this).css("left","100%");
+      $(".hover", this).css("zIndex", "999");
+      $(".hover", this).stop().animate({left:"0px"},{queue:false,duration:1000});
+   }, function()
+   {
+      $(".hover", this).stop().animate({left:"100%"},{queue:false,duration:1000});
+   });
+   $("#RollOverLayer6").hover(function(e)
+   {
+      $(".hover", this).css("left","100%");
+      $(".hover", this).css("zIndex", "999");
+      $(".hover", this).stop().animate({left:"0px"},{queue:false,duration:1000});
+   }, function()
+   {
+      $(".hover", this).stop().animate({left:"100%"},{queue:false,duration:1000});
+   });
+   searchParseURL('SiteSearch1');
+   var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+   if (iOS)
+   {
+      $('#wb_welcome,#wb_VideoBackground').css('background-attachment', 'scroll');
+   }
+   $(window).on('resize', function()
+   {
+      ResponsiveVideo('welcome-video');
+      ResponsiveVideo('PanelLayer-video');
+   });
+   ResponsiveVideo('welcome-video');
+   ResponsiveVideo('PanelLayer-video');
+});
+</script>
+</head>
+<body>
+<div id="wb_welcome">
+<div id="welcome-video"><video src="4709394-Uhd 4096 2160 25Fps.mp4" autoplay loop muted playsinline></video>
+</div>
+<div id="welcome-divider-bottom">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 24" preserveAspectRatio="none">
+<defs>
+   <path id="wave-animated" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+</defs>
+<g class="wave-animated">
+   <use xlink:href="#wave-animated" x="48" y="0" class="divider-fill" style="opacity:0.7" />
+   <use xlink:href="#wave-animated" x="48" y="3" class="divider-fill" style="opacity:0.5" />
+   <use xlink:href="#wave-animated" x="48" y="5" class="divider-fill" style="opacity:0.3" />
+   <use xlink:href="#wave-animated" x="48" y="7" class="divider-fill"  />
+</g>
+</svg>
+</div>
+<div id="welcome">
+<div class="col-1">
+<div id="wb_welcomeText">
+<p style="font-size:16px;line-height:18px;"><span style="font-size:32px;line-height:36px;font-weight:bold;">EC SCHOLAR NET</span></p>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_blog">
+<div id="blog-divider-top">
+</div>
+<div id="blog">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_services1">
+<div id="services1">
+<div class="row">
+<div class="col-1">
+<div id="wb_Card69" class="card">
+   <div id="Card69-card-body">
+      <div id="Card69-card-item0"><a href="./Notes-&-Papers.html"><svg class="svg-icon" viewBox="0 0 192 192" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M183 51 C185 55, 186 60, 185 65 L155 162 C154 167, 151 170, 147 174 C143 177, 138 178, 134 178 L35 178 C29 178, 24 176, 19 173 C14 169, 10 164, 8 158 C7 154, 6 149, 8 145 C8 145, 8 144, 8 142 C9 140, 9 139, 9 138 C9 137, 9 137, 8 136 C8 135, 8 134, 8 134 C8 133, 9 132, 9 131 C9 131, 10 130, 11 129 C12 128, 12 127, 13 126 C14 124, 16 120, 17 116 C19 113, 20 109, 21 107 C21 106, 21 105, 21 103 C20 102, 20 101, 21 100 C21 100, 21 99, 22 97 C23 96, 24 95, 24 95 C26 92, 27 89, 29 85 C30 81, 31 78, 31 75 C31 75, 31 74, 31 72 C31 70, 31 69, 31 69 C31 68, 32 67, 34 66 C35 65, 36 64, 36 63 C37 62, 39 59, 40 54 C42 50, 43 47, 43 44 C43 43, 43 43, 43 41 C43 40, 43 39, 43 38 C43 38, 43 37, 44 36 C44 36, 45 35, 46 34 C47 33, 47 32, 48 32 C48 31, 49 30, 49 29 C50 27, 50 26, 51 25 C51 24, 52 22, 53 21 C53 20, 54 18, 55 17 C55 17, 56 16, 58 15 C59 14, 60 14, 61 14 C63 14, 65 14, 67 14 L66 15 C69 14, 71 14, 72 14 L153 14 C159 14, 163 16, 166 20 C169 24, 169 28, 168 34 L138 131 C136 139, 133 145, 131 147 C128 150, 123 151, 117 151 L24 151 C22 151, 20 151, 20 152 C19 154, 19 155, 20 157 C21 162, 26 165, 35 165 L134 165 C136 165, 138 164, 140 163 C142 162, 143 160, 144 158 L176 53 C176 51, 176 49, 176 47 C179 48, 181 49, 183 51 Z M69 51 C68 52, 68 53, 69 54 C69 54, 70 55, 71 55 L136 55 C137 55, 138 54, 139 54 C140 53, 140 52, 141 51 L143 45 C143 44, 143 43, 143 42 C142 41, 141 41, 140 41 L75 41 C74 41, 73 41, 73 42 C72 43, 71 44, 71 45 Z M60 79 C59 80, 59 81, 60 81 C60 82, 61 82, 62 82 L127 82 C128 82, 129 82, 130 81 C131 81, 131 80, 132 79 L134 72 C134 71, 134 70, 134 70 C133 69, 133 69, 132 69 L66 69 C66 69, 65 69, 64 70 C63 70, 62 71, 62 72"/>
+</svg>
+</a></div>
+      <div id="Card69-card-item1">NOTES & QUESTION PAPERS</div>
+      <div id="Card69-card-item2">Access a vast collection of well-structured and concise notes tailored for electronics and communication subjects. Each topic is explained with clarity, ensuring students can quickly grasp complex concepts and prepare effectively for exams or practical applications, saving time and enhancing learning outcomes.</div>
+   </div>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Card5" class="card">
+   <div id="Card5-card-body">
+      <div id="Card5-card-item0"><a href="./Information.html"><svg class="svg-icon" viewBox="0 0 192 192" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M35 144 L35 158 L23 158 C21 158, 21 157, 21 156 L21 154 L16 154 C15 154, 14 154, 14 153 L14 149 C14 148, 15 148, 16 148 L21 148 L21 146 C21 145, 21 144, 23 144 Z M35 117 L35 130 L23 130 C21 130, 21 130, 21 129 L21 127 L16 127 C15 127, 14 126, 14 125 L14 122 C14 121, 15 120, 16 120 L21 120 L21 118 C21 117, 21 117, 23 117 Z M35 89 L35 103 L23 103 C21 103, 21 102, 21 101 L21 100 L16 100 C15 100, 14 99, 14 98 L14 94 C14 93, 15 93, 16 93 L21 93 L21 91 C21 90, 21 89, 23 89 Z M35 62 L35 76 L23 76 C21 76, 21 75, 21 74 L21 72 L16 72 C15 72, 14 72, 14 70 L14 67 C14 66, 15 65, 16 65 L21 65 L21 64 C21 62, 21 62, 23 62 Z M35 34 L35 48 L23 48 C21 48, 21 48, 21 46 L21 45 L16 45 C15 45, 14 44, 14 43 L14 40 C14 38, 15 38, 16 38 L21 38 L21 36 C21 35, 21 34, 23 34 Z M151 17 L151 175 C151 178, 150 180, 148 182 C146 184, 144 185, 141 185 L52 185 C49 185, 46 184, 44 182 C42 180, 41 178, 41 175 L41 17 C41 14, 42 12, 44 10 C46 8, 49 7, 52 7 L141 7 C144 7, 146 8, 148 10 C150 12, 151 14, 151 17 Z M179 149 L179 153 C179 154, 178 154, 177 154 L172 154 L172 156 C172 157, 171 158, 170 158 L158 158 L158 144 L170 144 C171 144, 172 145, 172 146 L172 148 L177 148 C178 148, 179 148, 179 149 Z M179 122 L179 125 C179 126, 178 127, 177 127 L172 127 L172 129 C172 130, 171 130, 170 130 L158 130 L158 117 L170 117 C171 117, 172 117, 172 118 L172 120 L177 120 C178 120, 179 121, 179 122 Z M179 94 L179 98 C179 99, 178 100, 177 100 L172 100 L172 101 C172 102, 171 103, 170 103 L158 103 L158 89 L170 89 C171 89, 172 90, 172 91 L172 93 L177 93 C178 93, 179 93, 179 94 Z M179 67 L179 70 C179 72, 178 72, 177 72 L172 72 L172 74 C172 75, 171 76, 170 76 L158 76 L158 62 L170 62 C171 62, 172 62, 172 64 L172 65 L177 65 C178 65, 179 66, 179 67 Z M179 40 L179 43 C179 44, 178 45, 177 45 L172 45 L172 46 C172 48, 171 48, 170 48 L158 48 L158 34 L170 34 C171 34, 172 35, 172 36 L172 38 L177 38 C178 38, 179 38, 179 40"/>
+</svg>
+</a></div>
+      <div id="Card5-card-item1">Information About Electronics Components</div>
+      <div id="Card5-card-item2">Dive into a detailed repository of electronic components, covering specifications, working principles, and real-world applications. This section is a perfect resource for students aiming to enhance their technical understanding, offering clarity on how each component contributes to designing and building electronic systems.</div>
+   </div>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_Card6" class="card">
+   <div id="Card6-card-body">
+      <div id="Card6-card-item0"><a href="./ChatRoom.html"><svg class="svg-icon" viewBox="0 0 192 192" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M46 56 C48 55, 49 52, 49 49 C49 46, 48 44, 46 42 C45 40, 42 40, 39 40 C36 40, 34 41, 31 42 C29 44, 28 46, 28 49 C28 52, 29 54, 31 56 C34 58, 36 59, 39 59 C42 59, 45 58, 46 56 Z M129 104 C129 102, 128 100, 126 98 C124 97, 122 96, 119 96 C117 96, 115 97, 114 98 C112 100, 111 102, 111 104 C111 106, 112 107, 114 109 C115 111, 117 111, 119 111 C122 111, 124 111, 126 109 C128 108, 129 106, 129 104 Z M101 56 C103 55, 103 52, 103 49 C103 46, 103 44, 101 42 C99 40, 97 40, 94 40 C91 40, 88 41, 86 42 C83 44, 82 46, 82 49 C82 52, 83 54, 86 56 C88 58, 91 59, 94 59 C97 59, 99 58, 101 56 Z M171 104 C171 102, 171 100, 169 98 C167 97, 165 96, 162 96 C160 96, 158 97, 156 98 C155 100, 154 102, 154 104 C154 106, 155 107, 156 109 C158 111, 160 111, 162 111 C165 111, 167 111, 169 109 C171 108, 171 106, 171 104 Z M143 61 C141 61, 138 61, 135 61 C123 61, 112 63, 102 69 C92 74, 84 82, 78 91 C72 101, 69 111, 69 122 C69 128, 70 133, 72 138 C69 139, 67 139, 65 139 C63 139, 61 139, 59 139 C58 138, 56 138, 53 138 C51 137, 50 137, 49 137 C48 137, 46 137, 43 136 C40 135, 38 135, 37 135 L10 148 L18 125 C-3 111, -13 93, -13 73 C-13 61, -10 49, -3 39 C4 29, 14 21, 26 15 C38 10, 51 7, 65 7 C77 7, 89 9, 100 14 C111 18, 121 25, 128 33 C136 42, 141 51, 143 61 Z M206 121 C206 130, 204 138, 199 145 C194 153, 188 160, 179 166 L185 185 L164 174 C153 176, 145 178, 140 178 C128 178, 117 175, 107 170 C97 165, 89 158, 83 150 C77 141, 74 131, 74 121 C74 111, 77 102, 83 93 C89 84, 97 77, 107 72 C117 67, 128 65, 140 65 C152 65, 163 67, 173 72 C183 77, 191 84, 197 93 C203 102, 206 111, 206 121"/>
+</svg>
+</a></div>
+      <div id="Card6-card-item1">CHAT-ROOM</div>
+      <div id="Card6-card-item2">Collaborate with peers in an interactive student chat room to exchange ideas, solve doubts, and discuss concepts. This feature promotes teamwork and knowledge sharing, helping students connect with like-minded individuals and create a supportive academic community.</div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_services2">
+<div id="services2">
+<div class="row">
+<div class="col-1">
+<div id="wb_Card7" class="card">
+   <div id="Card7-card-body">
+      <div id="Card7-card-item0"><a href="./Links.html"><svg class="svg-icon" viewBox="0 0 192 192" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M151 113 L151 148 C151 156, 148 163, 142 169 C136 176, 128 179, 120 179 L31 179 C22 179, 15 176, 9 169 C3 163, 0 156, 0 148 L0 59 C0 50, 3 43, 9 37 C15 31, 22 28, 31 28 L106 28 C107 28, 108 28, 109 29 C109 29, 110 30, 110 31 L110 38 C110 39, 109 40, 109 40 C108 41, 107 41, 106 41 L31 41 C26 41, 22 43, 19 46 C15 50, 14 54, 14 59 L14 148 C14 152, 15 156, 19 160 C22 163, 26 165, 31 165 L120 165 C125 165, 129 163, 132 160 C135 156, 137 152, 137 148 L137 113 C137 112, 137 112, 138 111 C139 110, 140 110, 141 110 L147 110 C148 110, 149 110, 150 111 C151 112, 151 112, 151 113 Z M192 21 L192 76 C192 78, 191 79, 190 80 C189 82, 187 83, 185 83 C183 83, 182 82, 180 80 L161 62 L92 131 C91 132, 90 133, 89 133 C88 133, 87 132, 87 131 L74 119 C74 119, 73 118, 73 117 C73 116, 74 115, 74 114 L144 44 L125 26 C124 24, 123 23, 123 21 C123 19, 124 17, 125 16 C127 15, 128 14, 130 14 L185 14 C187 14, 189 15, 190 16 C191 17, 192 19, 192 21"/>
+</svg>
+</a></div>
+      <div id="Card7-card-item1">IMPORTANT LINKS</div>
+      <div id="Card7-card-item2">RTMNU offers valuable resources like study materials and exam papers for electronics and communication students. EasyEDA is an online tool for PCB design and simulation, simplifying schematic and layout creation. MATLAB is essential for data analysis, simulation, and modeling in engineering, widely used in signal processing and systems analysis.<br><br><br></div>
+   </div>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Card8" class="card">
+   <div id="Card8-card-body">
+      <div id="Card8-card-item0"><a href="./Shop.html"><svg class="svg-icon" viewBox="0 0 192 192" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M142 74 C143 73, 144 71, 144 69 C144 68, 143 66, 142 65 C141 63, 139 63, 137 63 C135 63, 134 63, 132 65 L117 80 L117 49 C117 47, 116 45, 115 44 C113 43, 112 42, 110 42 C108 42, 106 43, 105 44 C104 45, 103 47, 103 49 L103 80 L87 65 C86 63, 84 63, 82 63 C81 63, 79 63, 78 65 C76 66, 76 68, 76 69 C76 71, 76 73, 78 74 L105 102 C106 103, 108 104, 110 104 C112 104, 113 103, 115 102 Z M72 149 C74 152, 76 155, 76 159 C76 162, 74 166, 72 168 C69 171, 66 172, 62 172 C58 172, 55 171, 52 168 C49 166, 48 162, 48 159 C48 155, 49 152, 52 149 C55 146, 58 145, 62 145 C66 145, 69 146, 72 149 Z M168 149 C170 152, 172 155, 172 159 C172 162, 170 166, 168 168 C165 171, 162 172, 158 172 C154 172, 151 171, 148 168 C145 166, 144 162, 144 159 C144 155, 145 152, 148 149 C151 146, 154 145, 158 145 C162 145, 165 146, 168 149 Z M185 42 L185 97 C185 99, 185 100, 184 101 C182 103, 181 103, 179 104 L67 117 C67 117, 68 118, 68 119 C68 120, 68 121, 68 122 C69 123, 69 124, 69 124 C69 125, 68 128, 66 131 L165 131 C167 131, 168 132, 170 133 C171 134, 172 136, 172 138 C172 140, 171 141, 170 143 C168 144, 167 145, 165 145 L55 145 C53 145, 52 144, 50 143 C49 141, 48 140, 48 138 C48 137, 49 136, 49 134 C50 132, 51 130, 52 127 C54 125, 55 124, 55 123 L36 35 L14 35 C12 35, 10 34, 9 33 C8 32, 7 30, 7 28 C7 26, 8 25, 9 23 C10 22, 12 21, 14 21 L41 21 C42 21, 43 22, 44 22 C45 23, 46 23, 46 24 C47 24, 47 25, 48 26 C48 27, 49 28, 49 29 C49 30, 49 31, 49 32 C49 34, 50 35, 50 35 L178 35 C180 35, 182 36, 183 37 C185 38, 185 40, 185 42"/>
+</svg>
+</a></div>
+      <div id="Card8-card-item1">SHOP</div>
+      <div id="Card8-card-item2">With a user-friendly interface and a wide range of products, it ensures students have access to essential parts for their academic and personal projects, all in one place. Shop for premium-quality electronic components with ease through this dedicated section.</div>
+   </div>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_Card9" class="card">
+   <div id="Card9-card-body">
+      <div id="Card9-card-item0"><a href="./projects.html"><svg class="svg-icon" viewBox="0 0 192 192" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M163 90 L165 123 C165 128, 162 133, 156 137 C150 141, 142 145, 131 147 C120 150, 109 151, 96 151 C84 151, 72 150, 62 147 C51 145, 43 141, 37 137 C30 133, 28 128, 28 123 L30 90 L91 109 C93 109, 95 110, 96 110 C98 110, 100 109, 102 109 Z M217 51 C219 52, 220 53, 220 55 C220 56, 219 58, 217 58 L97 96 C97 96, 97 96, 96 96 C96 96, 96 96, 95 96 L25 74 C22 76, 20 80, 18 86 C16 91, 15 98, 14 105 C19 107, 21 111, 21 117 C21 121, 19 125, 15 128 L21 174 C21 175, 21 176, 20 177 C19 178, 19 178, 18 178 L-3 178 C-4 178, -5 178, -6 177 C-6 176, -7 175, -6 174 L0 128 C-4 125, -6 121, -6 117 C-6 111, -4 107, 1 105 C1 90, 5 78, 11 69 L-25 58 C-26 58, -27 56, -27 55 C-27 53, -26 52, -25 51 L95 14 C96 14, 96 14, 96 14 C97 14, 97 14, 97 14"/>
+</svg>
+</a></div>
+      <div id="Card9-card-item1">PROJECTS</div>
+      <div id="Card9-card-item2">Discover creative and practical project ideas to develop technical skills and innovation. This section provides detailed insights, step-by-step implementation guidance, and valuable resources, enabling students to execute their projects successfully and stay ahead in the competitive world of electronics and communication.</div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_VideoBackground">
+<div id="VideoBackground-overlay"></div>
+<div id="VideoBackground">
+<div class="row">
+<div class="col-1">
+<div id="wb_Heading1">
+<h6 id="Heading1">Use Our Generative AI          EC Buddy<br></h6>
+</div>
+<div id="wb_Text2">
+<span style="color:#FFFFFF;font-family:Arial;font-size:29px;"><em>Ask Anything You Can Want.....</em></span>
+</div>
+<div id="Html1">
+<script type="module">
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    Chatbot.init({
+        chatflowid: "964562da-4ea9-4aa7-8f50-3079eafbeaf3",
+        apiHost: "https://aniket1998-aniket.hf.space",
+        chatflowConfig: {
+            /* Chatflow Config */
+        },
+        observersConfig: {
+            /* Observers Config */
+        },
+        theme: {
+            button: {
+                backgroundColor: '#ffd519',
+                right: 20,
+                bottom: 20,
+                size: 48,
+                dragAndDrop: true,
+                iconColor: 'Black',
+                customIconSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
+                autoWindowOpen: {
+                    autoOpen: false,
+                    openDelay: 2,
+                    autoOpenOnMobile: false
+                }
+            },
+            tooltip: {
+                showTooltip: true,
+                tooltipMessage: 'Hi There 💬!',
+                tooltipBackgroundColor: '#ffd519',
+                tooltipTextColor: 'black',
+                tooltipFontSize: 16
+            },
+            
+            customCSS: ``,
+            chatWindow: {
+                showTitle: true,
+                showAgentMessages: true,
+                title: 'EC Buddy',
+                titleAvatarSrc: '',
+                welcomeMessage: 'Hello! How Can I Help You?',
+                errorMessage: 'This is a custom error message',
+                backgroundColor: '#fcfcfa',
+                backgroundImage: 'enter image path or link',
+                height: 470,
+                width: 360,
+                fontSize: 16,
+                starterPrompts: [
+                    
+                    "What is Arduino?",
+                    "Write Code On Banking System.",
+                    "How NTSC PAL SECAM System Works?"
+                    
+                ],
+                starterPromptFontSize: 15,
+                clearChatOnReload: false,
+                sourceDocsTitle: 'Sources:',
+                renderHTML: true,
+                botMessage: {
+                    backgroundColor: '#fffef7',
+                    textColor: 'black',
+                    showAvatar: false,
+                    avatarSrc: ''
+                },
+                userMessage: {
+                    backgroundColor: '#ffd519',
+                    textColor: 'black',
+                    showAvatar: false,
+                    avatarSrc: ''
+                },
+                textInput: {
+                    placeholder: 'Ask Me Anything..',
+                    backgroundColor: '#ffffff',
+                    textColor: 'black',
+                    sendButtonColor: '#ffd519',
+                    maxChars: 50,
+                    maxCharsWarningMessage: 'You exceeded the characters limit. Please input less than 50 characters.',
+                    autoFocus: true,
+                    sendMessageSound: true,
+                    sendSoundLocation: 'send_message.mp3',
+                    receiveMessageSound: true,
+                    receiveSoundLocation: 'receive_message.mp3'
+                },
+                feedback: {
+                    color: '#303235'
+                },
+                dateTimeToggle: {
+                    date: true,
+                    time: true
+                },
+                footer: {
+                    textColor: '#303235',
+                    text: 'Devloped by',
+                    company: 'Aniket Shegamwar',
+                    companyLink: 'https://github.com/aniket101998'
+                }
+            }
+        }
+    })
+</script></div>
+<a id="Button2" href="./ChatBot.html">Chat</a>
+</div>
+<div class="col-2">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_blogHeading">
+<h1 id="blogHeading"><br><br>ABOUT US<br><br></h1>
+</div>
+<div id="wb_Text1">
+<span style="color:#000000;font-family:Arial;font-size:16px;">We are a dedicated team of students working on an innovative electronics project guided by Dr. P.R. Bokde. Our team leader, Aniket Shegamwar, serves as the developer, utilizing his expertise to drive the project forward. Other members include Vaishnavi Bawane, Urvesh Thubrikar, Himanshu Kute, and Ruchika Moon, each contributing by gathering essential information and resources. Our project aims to create a comprehensive platform for students in electronics and communication, providing access to valuable materials such as component information, subject notes, and project ideas. Together, we strive to foster collaboration and enhance the learning experience for our peers.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_blogGrid">
+<div id="blogGrid">
+<div class="row">
+<div class="col-1">
+<div id="RollOverLayer2">
+<div class="hover">
+<div id="wb_Card59" class="card">
+   <div id="Card59-card-body">
+      <div id="Card59-card-item0">Assistant Professor</div>
+      <div id="Card59-card-item1">Priyadarshini Bhagwati College Of Engineering, Nagpur</div>
+      <div id="Card59-card-item2">Electronices & Communication Department</div>
+      <div id="Card59-card-item3"><a href="https://www.linkedin.com/in/pramod-bokde-21127a141/"><svg class="svg-icon" viewBox="0 0 84 84" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M17 66 L28 66 L28 34 L17 34Z  M29 24 C29 22, 28 21, 27 20 C26 19, 24 18, 23 18 C21 18, 19 19, 18 20 C17 21, 16 22, 16 24 C16 25, 17 27, 18 28 C19 29, 21 29, 22 29 L22 29 C24 29, 26 29, 27 28 C28 27, 29 25, 29 24 Z M56 66 L67 66 L67 48 C67 43, 66 39, 63 37 C61 34, 58 33, 54 33 C50 33, 47 35, 45 38 L45 38 L45 34 L34 34 C34 36, 34 47, 34 66 L45 66 L45 48 C45 47, 45 46, 45 45 C46 44, 46 43, 47 43 C48 42, 49 42, 51 42 C54 42, 56 44, 56 49 Z M78 19 L78 64 C78 68, 77 71, 74 74 C71 77, 68 78, 64 78 L19 78 C16 78, 13 77, 10 74 C7 71, 6 68, 6 64 L6 19 C6 16, 7 13, 10 10 C13 7, 16 6, 19 6 L64 6 C68 6, 71 7, 74 10 C77 13, 78 16, 78 19"/>
+</svg>
+</a></div>
+      <div id="Card59-card-item4"><a href="https://scholar.google.co.in/citations?user=HcU40dgAAAAJ&hl=en"><svg class="svg-icon" viewBox="0 0 84 84" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M30 18 L54 18 L54 12 L30 12Z  M84 48 L84 70 C84 73, 83 74, 82 76 C80 77, 79 78, 76 78 L7 78 C5 78, 4 77, 2 76 C1 74, 0 73, 0 70 L0 48 L31 48 L31 55 C31 56, 32 57, 32 58 C33 58, 34 58, 34 58 L49 58 C50 58, 51 58, 52 58 C52 57, 52 56, 52 55 L52 48Z  M48 48 L48 54 L36 54 L36 48Z  M84 25 L84 43 L0 43 L0 25 C0 23, 1 22, 2 20 C4 19, 5 18, 7 18 L24 18 L24 10 C24 9, 24 8, 25 7 C26 6, 27 6, 28 6 L55 6 C57 6, 58 6, 59 7 C60 8, 60 9, 60 10 L60 18 L76 18 C79 18, 80 19, 82 20 C83 22, 84 23, 84 25"/>
+</svg>
+</a></div>
+      <div id="Card59-card-item5"><a href="https://www.instagram.com/pramodbokde/"><svg class="svg-icon" viewBox="0 0 84 84" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M50 50 C53 48, 54 45, 54 42 C54 39, 53 36, 50 33 C48 31, 45 30, 42 30 C39 30, 36 31, 34 33 C31 36, 30 39, 30 42 C30 45, 31 48, 34 50 C36 53, 39 54, 42 54 C45 54, 48 53, 50 50 Z M55 29 C59 32, 60 37, 60 42 C60 47, 59 51, 55 55 C51 59, 47 60, 42 60 C37 60, 33 59, 29 55 C25 51, 24 47, 24 42 C24 37, 25 32, 29 29 C33 25, 37 24, 42 24 C47 24, 51 25, 55 29 Z M64 20 C65 21, 66 22, 66 23 C66 24, 65 25, 64 26 C63 27, 62 27, 61 27 C60 27, 59 27, 58 26 C57 25, 57 24, 57 23 C57 22, 57 21, 58 20 C59 19, 60 18, 61 18 C62 18, 63 19, 64 20 Z M46 12 C43 12, 42 12, 42 12 C42 12, 41 12, 38 12 C36 12, 35 12, 33 12 C32 12, 31 12, 29 13 C27 13, 25 13, 24 13 C23 13, 22 14, 21 14 C19 15, 18 15, 17 17 C15 18, 15 19, 14 21 C14 22, 13 23, 13 24 C13 25, 13 27, 13 29 C12 31, 12 32, 12 33 C12 35, 12 36, 12 38 C12 41, 12 42, 12 42 C12 42, 12 43, 12 46 C12 48, 12 49, 12 51 C12 52, 12 53, 13 55 C13 57, 13 59, 13 60 C13 61, 14 62, 14 63 C15 65, 15 66, 17 67 C18 69, 19 69, 21 70 C22 70, 23 71, 24 71 C25 71, 27 71, 29 71 C31 71, 32 72, 33 72 C35 72, 36 72, 38 72 C41 72, 42 72, 42 72 C42 72, 43 72, 46 72 C48 72, 49 72, 51 72 C52 72, 53 71, 55 71 C57 71, 59 71, 60 71 C61 71, 62 70, 63 70 C65 69, 66 69, 67 67 C69 66, 69 65, 70 63 C70 62, 71 61, 71 60 C71 59, 71 57, 71 55 C71 53, 72 52, 72 51 C72 49, 72 48, 72 46 C72 43, 72 42, 72 42 C72 42, 72 41, 72 38 C72 36, 72 35, 72 33 C72 32, 71 31, 71 29 C71 27, 71 25, 71 24 C71 23, 70 22, 70 21 C69 19, 69 18, 67 17 C66 15, 65 15, 63 14 C62 14, 61 13, 60 13 C59 13, 57 13, 55 13 C53 12, 52 12, 51 12 C49 12, 48 12, 46 12 Z M78 27 C78 30, 78 35, 78 42 C78 49, 78 54, 78 57 C77 63, 76 68, 72 72 C68 75, 63 77, 57 78 C54 78, 49 78, 42 78 C35 78, 30 78, 27 78 C21 77, 16 75, 12 72 C8 68, 7 63, 6 57 C6 54, 6 49, 6 42 C6 35, 6 30, 6 27 C7 21, 8 16, 12 12 C16 8, 21 7, 27 6 C30 6, 35 6, 42 6 C49 6, 54 6, 57 6 C63 7, 68 8, 72 12 C76 16, 77 21, 78 27"/>
+</svg>
+</a></div>
+      <hr id="Card59-card-item6">
+      <div id="Card59-card-item7"><a href="https://twitter.com/bokde_pramod?lang=en"><svg class="svg-icon" viewBox="0 0 84 84" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M66 29 C64 29, 62 30, 60 30 C62 29, 64 27, 65 25 C63 26, 61 27, 58 27 C56 25, 54 24, 51 24 C49 24, 46 25, 44 27 C42 29, 41 31, 41 34 C41 35, 41 35, 42 36 C38 36, 34 35, 30 33 C27 31, 24 29, 21 26 C20 27, 20 29, 20 31 C20 34, 21 37, 24 39 C23 39, 21 38, 19 38 L19 38 C19 40, 20 42, 22 44 C23 46, 25 47, 28 47 C27 48, 26 48, 25 48 C25 48, 24 48, 23 48 C24 50, 25 51, 27 53 C29 54, 30 54, 33 54 C29 57, 25 59, 20 59 C20 59, 19 59, 18 59 C23 62, 28 63, 33 63 C37 63, 40 62, 43 61 C46 60, 49 59, 51 57 C53 55, 55 53, 56 50 C58 48, 59 45, 60 43 C61 40, 61 38, 61 35 C61 34, 61 34, 61 34 C63 32, 65 31, 66 29 Z M78 19 L78 64 C78 68, 77 71, 74 74 C71 77, 68 78, 64 78 L19 78 C16 78, 13 77, 10 74 C7 71, 6 68, 6 64 L6 19 C6 16, 7 13, 10 10 C13 7, 16 6, 19 6 L64 6 C68 6, 71 7, 74 10 C77 13, 78 16, 78 19"/>
+</svg>
+</a></div>
+   </div>
+</div>
+</div>
+<div class="default">
+<div id="wb_Card63" class="card">
+   <div id="Card63-card-body">
+      <div style="overflow:hidden"><img id="Card63-card-item0" src="images/Remove background project (13)b.png" width="775" height="400" alt="" title=""></div>
+      <div id="Card63-card-item1"></div>
+      <div id="Card63-card-item2"> Project Guide</div>
+      <div id="Card63-card-item3">       Dr.P.R.Bokde<br>(Assistant Professor)</div>
+      <div id="Card63-card-item4">knowledgeable and experienced guide with expertise in web development and electronics, providing valuable insights and support.<br><br><br><br><br><br><br></div>
+   </div>
+</div>
+</div>
+</div>
+<div id="RollOverLayer4">
+<div class="hover">
+<div id="wb_Card11" class="card">
+   <div id="Card11-card-body">
+      <div id="Card11-card-item0">Electronics & Communication Department</div>
+      <div id="Card11-card-item1">Priyadarshini Bhagwati College Of Engineering, Nagpur</div>
+      <div id="Card11-card-item2">Electronices & Communication Department</div>
+      <div id="Card11-card-item3"><a href="https://www.facebook.com/aditya.thubrikar.28"><svg class="svg-icon" viewBox="0 0 84 84" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M63 4 L63 16 L56 16 C53 16, 51 16, 50 18 C49 19, 49 20, 49 23 L49 32 L62 32 L61 45 L49 45 L49 81 L34 81 L34 45 L22 45 L22 32 L34 32 L34 21 C34 15, 36 11, 39 8 C43 5, 47 3, 52 3 C57 3, 60 3, 63 4"/>
+</svg>
+</a></div>
+      <div id="Card11-card-item4"><a href="https://www.linkedin.com/in/urvesh-thubrikar-9292b8242/"><svg class="svg-icon" viewBox="0 0 84 84" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M17 66 L28 66 L28 34 L17 34Z  M29 24 C29 22, 28 21, 27 20 C26 19, 24 18, 23 18 C21 18, 19 19, 18 20 C17 21, 16 22, 16 24 C16 25, 17 27, 18 28 C19 29, 21 29, 22 29 L22 29 C24 29, 26 29, 27 28 C28 27, 29 25, 29 24 Z M56 66 L67 66 L67 48 C67 43, 66 39, 63 37 C61 34, 58 33, 54 33 C50 33, 47 35, 45 38 L45 38 L45 34 L34 34 C34 36, 34 47, 34 66 L45 66 L45 48 C45 47, 45 46, 45 45 C46 44, 46 43, 47 43 C48 42, 49 42, 51 42 C54 42, 56 44, 56 49 Z M78 19 L78 64 C78 68, 77 71, 74 74 C71 77, 68 78, 64 78 L19 78 C16 78, 13 77, 10 74 C7 71, 6 68, 6 64 L6 19 C6 16, 7 13, 10 10 C13 7, 16 6, 19 6 L64 6 C68 6, 71 7, 74 10 C77 13, 78 16, 78 19"/>
+</svg>
+</a></div>
+      <div id="Card11-card-item5"><a href="https://www.instagram.com/aditya_thubrikar_.45/"><svg class="svg-icon" viewBox="0 0 84 84" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M50 50 C53 48, 54 45, 54 42 C54 39, 53 36, 50 33 C48 31, 45 30, 42 30 C39 30, 36 31, 34 33 C31 36, 30 39, 30 42 C30 45, 31 48, 34 50 C36 53, 39 54, 42 54 C45 54, 48 53, 50 50 Z M55 29 C59 32, 60 37, 60 42 C60 47, 59 51, 55 55 C51 59, 47 60, 42 60 C37 60, 33 59, 29 55 C25 51, 24 47, 24 42 C24 37, 25 32, 29 29 C33 25, 37 24, 42 24 C47 24, 51 25, 55 29 Z M64 20 C65 21, 66 22, 66 23 C66 24, 65 25, 64 26 C63 27, 62 27, 61 27 C60 27, 59 27, 58 26 C57 25, 57 24, 57 23 C57 22, 57 21, 58 20 C59 19, 60 18, 61 18 C62 18, 63 19, 64 20 Z M46 12 C43 12, 42 12, 42 12 C42 12, 41 12, 38 12 C36 12, 35 12, 33 12 C32 12, 31 12, 29 13 C27 13, 25 13, 24 13 C23 13, 22 14, 21 14 C19 15, 18 15, 17 17 C15 18, 15 19, 14 21 C14 22, 13 23, 13 24 C13 25, 13 27, 13 29 C12 31, 12 32, 12 33 C12 35, 12 36, 12 38 C12 41, 12 42, 12 42 C12 42, 12 43, 12 46 C12 48, 12 49, 12 51 C12 52, 12 53, 13 55 C13 57, 13 59, 13 60 C13 61, 14 62, 14 63 C15 65, 15 66, 17 67 C18 69, 19 69, 21 70 C22 70, 23 71, 24 71 C25 71, 27 71, 29 71 C31 71, 32 72, 33 72 C35 72, 36 72, 38 72 C41 72, 42 72, 42 72 C42 72, 43 72, 46 72 C48 72, 49 72, 51 72 C52 72, 53 71, 55 71 C57 71, 59 71, 60 71 C61 71, 62 70, 63 70 C65 69, 66 69, 67 67 C69 66, 69 65, 70 63 C70 62, 71 61, 71 60 C71 59, 71 57, 71 55 C71 53, 72 52, 72 51 C72 49, 72 48, 72 46 C72 43, 72 42, 72 42 C72 42, 72 41, 72 38 C72 36, 72 35, 72 33 C72 32, 71 31, 71 29 C71 27, 71 25, 71 24 C71 23, 70 22, 70 21 C69 19, 69 18, 67 17 C66 15, 65 15, 63 14 C62 14, 61 13, 60 13 C59 13, 57 13, 55 13 C53 12, 52 12, 51 12 C49 12, 48 12, 46 12 Z M78 27 C78 30, 78 35, 78 42 C78 49, 78 54, 78 57 C77 63, 76 68, 72 72 C68 75, 63 77, 57 78 C54 78, 49 78, 42 78 C35 78, 30 78, 27 78 C21 77, 16 75, 12 72 C8 68, 7 63, 6 57 C6 54, 6 49, 6 42 C6 35, 6 30, 6 27 C7 21, 8 16, 12 12 C16 8, 21 7, 27 6 C30 6, 35 6, 42 6 C49 6, 54 6, 57 6 C63 7, 68 8, 72 12 C76 16, 77 21, 78 27"/>
+</svg>
+</a></div>
+      <hr id="Card11-card-item6">
+   </div>
+</div>
+</div>
+<div class="default">
+<div id="wb_Card1" class="card">
+   <div id="Card1-card-body">
+      <img id="Card1-card-item0" src="images/Remove background project (11)b.png" width="712" height="475" alt="" title="">
+      <div id="Card1-card-item1"></div>
+      <div id="Card1-card-item2">Web Hosting </div>
+      <div id="Card1-card-item3">Urvesh Thubrikar</div>
+      <div id="Card1-card-item4">Skilled in Python programming and proficient in handling website hosting, ensuring smooth deployment and maintenance of web platforms with a focus on efficiency and performance.</div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-2">
+<div id="RollOverLayer1">
+<div class="hover">
+<div id="wb_Card13" class="card">
+   <div id="Card13-card-body">
+      <div id="Card13-card-item0">Electronics & Communication Department</div>
+      <div id="Card13-card-item1">Priyadarshini Bhagwati College Of Engineering, Nagpur</div>
+      <div id="Card13-card-item2"></div>
+      <div id="Card13-card-item3"><a href="https://www.facebook.com/aniket.shegamwar/"><svg class="svg-icon" viewBox="0 0 84 84" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M63 4 L63 16 L56 16 C53 16, 51 16, 50 18 C49 19, 49 20, 49 23 L49 32 L62 32 L61 45 L49 45 L49 81 L34 81 L34 45 L22 45 L22 32 L34 32 L34 21 C34 15, 36 11, 39 8 C43 5, 47 3, 52 3 C57 3, 60 3, 63 4"/>
+</svg>
+</a></div>
+      <div id="Card13-card-item4"><a href="https://www.linkedin.com/in/aniket1998/"><svg class="svg-icon" viewBox="0 0 84 84" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M17 66 L28 66 L28 34 L17 34Z  M29 24 C29 22, 28 21, 27 20 C26 19, 24 18, 23 18 C21 18, 19 19, 18 20 C17 21, 16 22, 16 24 C16 25, 17 27, 18 28 C19 29, 21 29, 22 29 L22 29 C24 29, 26 29, 27 28 C28 27, 29 25, 29 24 Z M56 66 L67 66 L67 48 C67 43, 66 39, 63 37 C61 34, 58 33, 54 33 C50 33, 47 35, 45 38 L45 38 L45 34 L34 34 C34 36, 34 47, 34 66 L45 66 L45 48 C45 47, 45 46, 45 45 C46 44, 46 43, 47 43 C48 42, 49 42, 51 42 C54 42, 56 44, 56 49 Z M78 19 L78 64 C78 68, 77 71, 74 74 C71 77, 68 78, 64 78 L19 78 C16 78, 13 77, 10 74 C7 71, 6 68, 6 64 L6 19 C6 16, 7 13, 10 10 C13 7, 16 6, 19 6 L64 6 C68 6, 71 7, 74 10 C77 13, 78 16, 78 19"/>
+</svg>
+</a></div>
+      <div id="Card13-card-item5"><a href="https://www.instagram.com/aniket_shegamwar/"><svg class="svg-icon" viewBox="0 0 84 84" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M50 50 C53 48, 54 45, 54 42 C54 39, 53 36, 50 33 C48 31, 45 30, 42 30 C39 30, 36 31, 34 33 C31 36, 30 39, 30 42 C30 45, 31 48, 34 50 C36 53, 39 54, 42 54 C45 54, 48 53, 50 50 Z M55 29 C59 32, 60 37, 60 42 C60 47, 59 51, 55 55 C51 59, 47 60, 42 60 C37 60, 33 59, 29 55 C25 51, 24 47, 24 42 C24 37, 25 32, 29 29 C33 25, 37 24, 42 24 C47 24, 51 25, 55 29 Z M64 20 C65 21, 66 22, 66 23 C66 24, 65 25, 64 26 C63 27, 62 27, 61 27 C60 27, 59 27, 58 26 C57 25, 57 24, 57 23 C57 22, 57 21, 58 20 C59 19, 60 18, 61 18 C62 18, 63 19, 64 20 Z M46 12 C43 12, 42 12, 42 12 C42 12, 41 12, 38 12 C36 12, 35 12, 33 12 C32 12, 31 12, 29 13 C27 13, 25 13, 24 13 C23 13, 22 14, 21 14 C19 15, 18 15, 17 17 C15 18, 15 19, 14 21 C14 22, 13 23, 13 24 C13 25, 13 27, 13 29 C12 31, 12 32, 12 33 C12 35, 12 36, 12 38 C12 41, 12 42, 12 42 C12 42, 12 43, 12 46 C12 48, 12 49, 12 51 C12 52, 12 53, 13 55 C13 57, 13 59, 13 60 C13 61, 14 62, 14 63 C15 65, 15 66, 17 67 C18 69, 19 69, 21 70 C22 70, 23 71, 24 71 C25 71, 27 71, 29 71 C31 71, 32 72, 33 72 C35 72, 36 72, 38 72 C41 72, 42 72, 42 72 C42 72, 43 72, 46 72 C48 72, 49 72, 51 72 C52 72, 53 71, 55 71 C57 71, 59 71, 60 71 C61 71, 62 70, 63 70 C65 69, 66 69, 67 67 C69 66, 69 65, 70 63 C70 62, 71 61, 71 60 C71 59, 71 57, 71 55 C71 53, 72 52, 72 51 C72 49, 72 48, 72 46 C72 43, 72 42, 72 42 C72 42, 72 41, 72 38 C72 36, 72 35, 72 33 C72 32, 71 31, 71 29 C71 27, 71 25, 71 24 C71 23, 70 22, 70 21 C69 19, 69 18, 67 17 C66 15, 65 15, 63 14 C62 14, 61 13, 60 13 C59 13, 57 13, 55 13 C53 12, 52 12, 51 12 C49 12, 48 12, 46 12 Z M78 27 C78 30, 78 35, 78 42 C78 49, 78 54, 78 57 C77 63, 76 68, 72 72 C68 75, 63 77, 57 78 C54 78, 49 78, 42 78 C35 78, 30 78, 27 78 C21 77, 16 75, 12 72 C8 68, 7 63, 6 57 C6 54, 6 49, 6 42 C6 35, 6 30, 6 27 C7 21, 8 16, 12 12 C16 8, 21 7, 27 6 C30 6, 35 6, 42 6 C49 6, 54 6, 57 6 C63 7, 68 8, 72 12 C76 16, 77 21, 78 27"/>
+</svg>
+</a></div>
+      <hr id="Card13-card-item6">
+      <div id="Card13-card-item7"><a href="https://github.com/aniket101998"><svg class="svg-icon" viewBox="0 0 84 84" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M24 12 C29 9, 35 7, 42 7 C49 7, 55 9, 60 12 C66 15, 70 19, 73 25 C76 30, 78 36, 78 43 C78 51, 76 58, 71 64 C67 70, 61 75, 53 77 C53 77, 52 77, 52 77 C51 76, 51 76, 51 75 C51 75, 51 74, 51 72 C51 70, 51 67, 51 66 C51 62, 50 60, 49 59 C50 59, 52 58, 53 58 C55 58, 56 57, 58 56 C59 55, 60 54, 62 53 C63 52, 63 50, 64 48 C65 46, 65 44, 65 41 C65 37, 64 34, 61 31 C62 29, 62 25, 61 22 C60 22, 59 22, 57 22 C55 23, 54 24, 53 24 L51 26 C48 25, 45 24, 42 24 C39 24, 36 25, 33 26 C32 25, 32 25, 31 24 C30 24, 29 23, 27 23 C25 22, 24 22, 23 22 C22 25, 22 29, 23 31 C20 34, 19 37, 19 41 C19 44, 19 46, 20 48 C21 50, 21 52, 22 53 C23 54, 25 55, 26 56 C28 57, 29 58, 31 58 C32 58, 34 59, 35 59 C34 60, 33 62, 33 64 C32 64, 32 64, 31 64 C30 65, 29 65, 28 65 C27 65, 26 64, 25 64 C24 63, 23 62, 23 61 C22 60, 21 59, 20 58 C19 58, 19 57, 18 57 L17 57 C16 57, 16 57, 16 57 C16 57, 15 58, 16 58 C16 58, 16 58, 16 58 C16 59, 16 59, 17 59 L17 59 C18 60, 18 60, 19 61 C20 62, 20 63, 20 63 L21 64 C21 66, 22 67, 23 67 C24 68, 25 69, 26 69 C27 69, 28 69, 29 69 C30 69, 31 69, 32 69 L33 69 C33 70, 33 71, 33 73 C33 74, 33 75, 33 75 C33 76, 33 76, 32 77 C32 77, 31 77, 31 77 C23 75, 17 70, 13 64 C8 58, 6 51, 6 43 C6 36, 8 30, 11 25 C14 19, 18 15, 24 12 Z M20 59 C20 58, 20 58, 19 58 C19 58, 19 58, 19 58 C19 58, 19 59, 19 59 C19 59, 20 59, 20 59 Z M21 60 C21 60, 21 60, 21 60 C21 59, 20 59, 20 59 C20 60, 20 60, 20 60 C21 60, 21 60, 21 60 Z M22 62 C23 62, 23 62, 22 61 C22 61, 22 61, 22 61 C21 61, 21 62, 22 62 C22 62, 22 63, 22 62 Z M24 64 C25 64, 25 64, 24 63 C24 63, 24 63, 23 63 C23 64, 23 64, 24 64 C24 65, 24 65, 24 64 Z M27 66 C27 65, 27 65, 27 65 C26 65, 26 65, 26 65 C26 65, 26 66, 26 66 C27 66, 27 66, 27 66 Z M30 66 C30 65, 30 65, 29 65 C29 65, 29 65, 29 66 C29 66, 29 66, 29 66 C30 66, 30 66, 30 66 Z M33 65 C33 65, 32 65, 32 65 C31 65, 31 65, 31 66 C31 66, 32 66, 32 66 C33 66, 33 66, 33 65"/>
+</svg>
+</a></div>
+   </div>
+</div>
+</div>
+<div class="default">
+<div id="wb_Card10" class="card">
+   <div id="Card10-card-body">
+      <div style="overflow:hidden"><img id="Card10-card-item0" src="images/Remove background project (16)b.png" width="2972" height="1939" alt="" title=""></div>
+      <div id="Card10-card-item1"></div>
+      <div id="Card10-card-item2">Website Visual Design & Devloper </div>
+      <div id="Card10-card-item3">Aniket Shegamwar</div>
+      <div id="Card10-card-item4">Motivated individual passionate about technology, skilled in web development, data analytics, electronics, and SAP ABAP, always eager to learn.</div>
+   </div>
+</div>
+</div>
+</div>
+<div id="RollOverLayer5">
+<div class="hover">
+<div id="wb_Card2" class="card">
+   <div id="Card2-card-body">
+      <div id="Card2-card-item0">Electronics & Communication Departmen</div>
+      <div id="Card2-card-item1">Priyadarshini Bhagwati College Of Engineering, Nagpur</div>
+      <div id="Card2-card-item2"></div>
+      <div id="Card2-card-item3"><a href="https://www.facebook.com/ruchika.moon.5"><svg class="svg-icon" viewBox="0 0 84 84" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M63 4 L63 16 L56 16 C53 16, 51 16, 50 18 C49 19, 49 20, 49 23 L49 32 L62 32 L61 45 L49 45 L49 81 L34 81 L34 45 L22 45 L22 32 L34 32 L34 21 C34 15, 36 11, 39 8 C43 5, 47 3, 52 3 C57 3, 60 3, 63 4"/>
+</svg>
+</a></div>
+      <div id="Card2-card-item4"><a href="https://www.instagram.com/ruchikamoon01/"><svg class="svg-icon" viewBox="0 0 84 84" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M50 50 C53 48, 54 45, 54 42 C54 39, 53 36, 50 33 C48 31, 45 30, 42 30 C39 30, 36 31, 34 33 C31 36, 30 39, 30 42 C30 45, 31 48, 34 50 C36 53, 39 54, 42 54 C45 54, 48 53, 50 50 Z M55 29 C59 32, 60 37, 60 42 C60 47, 59 51, 55 55 C51 59, 47 60, 42 60 C37 60, 33 59, 29 55 C25 51, 24 47, 24 42 C24 37, 25 32, 29 29 C33 25, 37 24, 42 24 C47 24, 51 25, 55 29 Z M64 20 C65 21, 66 22, 66 23 C66 24, 65 25, 64 26 C63 27, 62 27, 61 27 C60 27, 59 27, 58 26 C57 25, 57 24, 57 23 C57 22, 57 21, 58 20 C59 19, 60 18, 61 18 C62 18, 63 19, 64 20 Z M46 12 C43 12, 42 12, 42 12 C42 12, 41 12, 38 12 C36 12, 35 12, 33 12 C32 12, 31 12, 29 13 C27 13, 25 13, 24 13 C23 13, 22 14, 21 14 C19 15, 18 15, 17 17 C15 18, 15 19, 14 21 C14 22, 13 23, 13 24 C13 25, 13 27, 13 29 C12 31, 12 32, 12 33 C12 35, 12 36, 12 38 C12 41, 12 42, 12 42 C12 42, 12 43, 12 46 C12 48, 12 49, 12 51 C12 52, 12 53, 13 55 C13 57, 13 59, 13 60 C13 61, 14 62, 14 63 C15 65, 15 66, 17 67 C18 69, 19 69, 21 70 C22 70, 23 71, 24 71 C25 71, 27 71, 29 71 C31 71, 32 72, 33 72 C35 72, 36 72, 38 72 C41 72, 42 72, 42 72 C42 72, 43 72, 46 72 C48 72, 49 72, 51 72 C52 72, 53 71, 55 71 C57 71, 59 71, 60 71 C61 71, 62 70, 63 70 C65 69, 66 69, 67 67 C69 66, 69 65, 70 63 C70 62, 71 61, 71 60 C71 59, 71 57, 71 55 C71 53, 72 52, 72 51 C72 49, 72 48, 72 46 C72 43, 72 42, 72 42 C72 42, 72 41, 72 38 C72 36, 72 35, 72 33 C72 32, 71 31, 71 29 C71 27, 71 25, 71 24 C71 23, 70 22, 70 21 C69 19, 69 18, 67 17 C66 15, 65 15, 63 14 C62 14, 61 13, 60 13 C59 13, 57 13, 55 13 C53 12, 52 12, 51 12 C49 12, 48 12, 46 12 Z M78 27 C78 30, 78 35, 78 42 C78 49, 78 54, 78 57 C77 63, 76 68, 72 72 C68 75, 63 77, 57 78 C54 78, 49 78, 42 78 C35 78, 30 78, 27 78 C21 77, 16 75, 12 72 C8 68, 7 63, 6 57 C6 54, 6 49, 6 42 C6 35, 6 30, 6 27 C7 21, 8 16, 12 12 C16 8, 21 7, 27 6 C30 6, 35 6, 42 6 C49 6, 54 6, 57 6 C63 7, 68 8, 72 12 C76 16, 77 21, 78 27"/>
+</svg>
+</a></div>
+      <hr id="Card2-card-item5">
+   </div>
+</div>
+</div>
+<div class="default">
+<div id="wb_Card12" class="card">
+   <div id="Card12-card-body">
+      <div style="overflow:hidden"><img id="Card12-card-item0" src="images/Remove background project (12)b.png" width="712" height="405" alt="" title=""></div>
+      <div id="Card12-card-item1"></div>
+      <div id="Card12-card-item2">Research & Information</div>
+      <div id="Card12-card-item3">Ruchika Moon</div>
+      <div id="Card12-card-item4">Dedicated to research and information collection, ensuring accurate and reliable data for effective project development.</div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-3">
+<div id="RollOverLayer3">
+<div class="hover">
+<div id="wb_Card4" class="card">
+   <div id="Card4-card-body">
+      <div id="Card4-card-item0">Electronics & Communication Department</div>
+      <div id="Card4-card-item1">Priyadarshini Bhagwati College Of Engineering, Nagpur</div>
+      <div id="Card4-card-item2"><svg class="svg-icon" viewBox="0 0 84 84" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M17 66 L28 66 L28 34 L17 34Z  M29 24 C29 22, 28 21, 27 20 C26 19, 24 18, 23 18 C21 18, 19 19, 18 20 C17 21, 16 22, 16 24 C16 25, 17 27, 18 28 C19 29, 21 29, 22 29 L22 29 C24 29, 26 29, 27 28 C28 27, 29 25, 29 24 Z M56 66 L67 66 L67 48 C67 43, 66 39, 63 37 C61 34, 58 33, 54 33 C50 33, 47 35, 45 38 L45 38 L45 34 L34 34 C34 36, 34 47, 34 66 L45 66 L45 48 C45 47, 45 46, 45 45 C46 44, 46 43, 47 43 C48 42, 49 42, 51 42 C54 42, 56 44, 56 49 Z M78 19 L78 64 C78 68, 77 71, 74 74 C71 77, 68 78, 64 78 L19 78 C16 78, 13 77, 10 74 C7 71, 6 68, 6 64 L6 19 C6 16, 7 13, 10 10 C13 7, 16 6, 19 6 L64 6 C68 6, 71 7, 74 10 C77 13, 78 16, 78 19"/>
+</svg>
+</div>
+      <div id="Card4-card-item3"><a href="https://www.instagram.com/_vaishnavi_bawne/"><svg class="svg-icon" viewBox="0 0 84 84" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M50 50 C53 48, 54 45, 54 42 C54 39, 53 36, 50 33 C48 31, 45 30, 42 30 C39 30, 36 31, 34 33 C31 36, 30 39, 30 42 C30 45, 31 48, 34 50 C36 53, 39 54, 42 54 C45 54, 48 53, 50 50 Z M55 29 C59 32, 60 37, 60 42 C60 47, 59 51, 55 55 C51 59, 47 60, 42 60 C37 60, 33 59, 29 55 C25 51, 24 47, 24 42 C24 37, 25 32, 29 29 C33 25, 37 24, 42 24 C47 24, 51 25, 55 29 Z M64 20 C65 21, 66 22, 66 23 C66 24, 65 25, 64 26 C63 27, 62 27, 61 27 C60 27, 59 27, 58 26 C57 25, 57 24, 57 23 C57 22, 57 21, 58 20 C59 19, 60 18, 61 18 C62 18, 63 19, 64 20 Z M46 12 C43 12, 42 12, 42 12 C42 12, 41 12, 38 12 C36 12, 35 12, 33 12 C32 12, 31 12, 29 13 C27 13, 25 13, 24 13 C23 13, 22 14, 21 14 C19 15, 18 15, 17 17 C15 18, 15 19, 14 21 C14 22, 13 23, 13 24 C13 25, 13 27, 13 29 C12 31, 12 32, 12 33 C12 35, 12 36, 12 38 C12 41, 12 42, 12 42 C12 42, 12 43, 12 46 C12 48, 12 49, 12 51 C12 52, 12 53, 13 55 C13 57, 13 59, 13 60 C13 61, 14 62, 14 63 C15 65, 15 66, 17 67 C18 69, 19 69, 21 70 C22 70, 23 71, 24 71 C25 71, 27 71, 29 71 C31 71, 32 72, 33 72 C35 72, 36 72, 38 72 C41 72, 42 72, 42 72 C42 72, 43 72, 46 72 C48 72, 49 72, 51 72 C52 72, 53 71, 55 71 C57 71, 59 71, 60 71 C61 71, 62 70, 63 70 C65 69, 66 69, 67 67 C69 66, 69 65, 70 63 C70 62, 71 61, 71 60 C71 59, 71 57, 71 55 C71 53, 72 52, 72 51 C72 49, 72 48, 72 46 C72 43, 72 42, 72 42 C72 42, 72 41, 72 38 C72 36, 72 35, 72 33 C72 32, 71 31, 71 29 C71 27, 71 25, 71 24 C71 23, 70 22, 70 21 C69 19, 69 18, 67 17 C66 15, 65 15, 63 14 C62 14, 61 13, 60 13 C59 13, 57 13, 55 13 C53 12, 52 12, 51 12 C49 12, 48 12, 46 12 Z M78 27 C78 30, 78 35, 78 42 C78 49, 78 54, 78 57 C77 63, 76 68, 72 72 C68 75, 63 77, 57 78 C54 78, 49 78, 42 78 C35 78, 30 78, 27 78 C21 77, 16 75, 12 72 C8 68, 7 63, 6 57 C6 54, 6 49, 6 42 C6 35, 6 30, 6 27 C7 21, 8 16, 12 12 C16 8, 21 7, 27 6 C30 6, 35 6, 42 6 C49 6, 54 6, 57 6 C63 7, 68 8, 72 12 C76 16, 77 21, 78 27"/>
+</svg>
+</a></div>
+      <hr id="Card4-card-item4">
+   </div>
+</div>
+</div>
+<div class="default">
+<div id="wb_Card3" class="card">
+   <div id="Card3-card-body">
+      <div style="overflow:hidden"><img id="Card3-card-item0" src="images/Remove background project (1).png" width="529" height="472" alt="" title=""></div>
+      <div id="Card3-card-item1">GitHub & Data Analytics</div>
+      <div id="Card3-card-item2">Vaishnavi Bawane</div>
+      <div id="Card3-card-item3">Skilled in data analytics with expertise in visualization and GitHub, showcasing excellent collaboration, version control, and a strong passion for learning and improving her skills.</div>
+   </div>
+</div>
+</div>
+</div>
+<div id="RollOverLayer6">
+<div class="hover">
+<div id="wb_Card15" class="card">
+   <div id="Card15-card-body">
+      <div id="Card15-card-item0">Electronics & Communication Department</div>
+      <div id="Card15-card-item1">Priyadarshini Bhagwati College Of Engineering, Nagpur</div>
+      <div id="Card15-card-item2"><a href="https://www.linkedin.com/in/himanshu-kute-ba272425b/"><svg class="svg-icon" viewBox="0 0 84 84" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M17 66 L28 66 L28 34 L17 34Z  M29 24 C29 22, 28 21, 27 20 C26 19, 24 18, 23 18 C21 18, 19 19, 18 20 C17 21, 16 22, 16 24 C16 25, 17 27, 18 28 C19 29, 21 29, 22 29 L22 29 C24 29, 26 29, 27 28 C28 27, 29 25, 29 24 Z M56 66 L67 66 L67 48 C67 43, 66 39, 63 37 C61 34, 58 33, 54 33 C50 33, 47 35, 45 38 L45 38 L45 34 L34 34 C34 36, 34 47, 34 66 L45 66 L45 48 C45 47, 45 46, 45 45 C46 44, 46 43, 47 43 C48 42, 49 42, 51 42 C54 42, 56 44, 56 49 Z M78 19 L78 64 C78 68, 77 71, 74 74 C71 77, 68 78, 64 78 L19 78 C16 78, 13 77, 10 74 C7 71, 6 68, 6 64 L6 19 C6 16, 7 13, 10 10 C13 7, 16 6, 19 6 L64 6 C68 6, 71 7, 74 10 C77 13, 78 16, 78 19"/>
+</svg>
+</a></div>
+      <div id="Card15-card-item3"><a href="https://www.instagram.com/himanshu_kute/"><svg class="svg-icon" viewBox="0 0 84 84" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M50 50 C53 48, 54 45, 54 42 C54 39, 53 36, 50 33 C48 31, 45 30, 42 30 C39 30, 36 31, 34 33 C31 36, 30 39, 30 42 C30 45, 31 48, 34 50 C36 53, 39 54, 42 54 C45 54, 48 53, 50 50 Z M55 29 C59 32, 60 37, 60 42 C60 47, 59 51, 55 55 C51 59, 47 60, 42 60 C37 60, 33 59, 29 55 C25 51, 24 47, 24 42 C24 37, 25 32, 29 29 C33 25, 37 24, 42 24 C47 24, 51 25, 55 29 Z M64 20 C65 21, 66 22, 66 23 C66 24, 65 25, 64 26 C63 27, 62 27, 61 27 C60 27, 59 27, 58 26 C57 25, 57 24, 57 23 C57 22, 57 21, 58 20 C59 19, 60 18, 61 18 C62 18, 63 19, 64 20 Z M46 12 C43 12, 42 12, 42 12 C42 12, 41 12, 38 12 C36 12, 35 12, 33 12 C32 12, 31 12, 29 13 C27 13, 25 13, 24 13 C23 13, 22 14, 21 14 C19 15, 18 15, 17 17 C15 18, 15 19, 14 21 C14 22, 13 23, 13 24 C13 25, 13 27, 13 29 C12 31, 12 32, 12 33 C12 35, 12 36, 12 38 C12 41, 12 42, 12 42 C12 42, 12 43, 12 46 C12 48, 12 49, 12 51 C12 52, 12 53, 13 55 C13 57, 13 59, 13 60 C13 61, 14 62, 14 63 C15 65, 15 66, 17 67 C18 69, 19 69, 21 70 C22 70, 23 71, 24 71 C25 71, 27 71, 29 71 C31 71, 32 72, 33 72 C35 72, 36 72, 38 72 C41 72, 42 72, 42 72 C42 72, 43 72, 46 72 C48 72, 49 72, 51 72 C52 72, 53 71, 55 71 C57 71, 59 71, 60 71 C61 71, 62 70, 63 70 C65 69, 66 69, 67 67 C69 66, 69 65, 70 63 C70 62, 71 61, 71 60 C71 59, 71 57, 71 55 C71 53, 72 52, 72 51 C72 49, 72 48, 72 46 C72 43, 72 42, 72 42 C72 42, 72 41, 72 38 C72 36, 72 35, 72 33 C72 32, 71 31, 71 29 C71 27, 71 25, 71 24 C71 23, 70 22, 70 21 C69 19, 69 18, 67 17 C66 15, 65 15, 63 14 C62 14, 61 13, 60 13 C59 13, 57 13, 55 13 C53 12, 52 12, 51 12 C49 12, 48 12, 46 12 Z M78 27 C78 30, 78 35, 78 42 C78 49, 78 54, 78 57 C77 63, 76 68, 72 72 C68 75, 63 77, 57 78 C54 78, 49 78, 42 78 C35 78, 30 78, 27 78 C21 77, 16 75, 12 72 C8 68, 7 63, 6 57 C6 54, 6 49, 6 42 C6 35, 6 30, 6 27 C7 21, 8 16, 12 12 C16 8, 21 7, 27 6 C30 6, 35 6, 42 6 C49 6, 54 6, 57 6 C63 7, 68 8, 72 12 C76 16, 77 21, 78 27"/>
+</svg>
+</a></div>
+      <hr id="Card15-card-item4">
+   </div>
+</div>
+</div>
+<div class="default">
+<div id="wb_Card14" class="card">
+   <div id="Card14-card-body">
+      <div style="overflow:hidden"><img id="Card14-card-item0" src="images/default-male-avatar-profile-icon-social-media-chatting-online-user-free-vector.jpg" width="400" height="400" alt="" title=""></div>
+      <div id="Card14-card-item1"><br>Research & Information </div>
+      <div id="Card14-card-item2">Himanshu Kute</div>
+      <div id="Card14-card-item3">Dedicated to gathering and organizing accurate information, ensuring that all project data is well-researched, relevant, and contributes effectively to the development and success of the project.</div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="menuLayer">
+<div id="wb_menuPanel">
+<a href="#PanelLayer" id="menuPanel">
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"></span>
+</a>
+</div>
+</div>
+<div id="upStickyLayer">
+<div id="wb_upIcon">
+<a href="#welcome"><div id="upIcon"><i class="fa fa-angle-up"></i></div></a></div>
+</div>
+<div id="PanelLayer">
+<div id="PanelLayer-video"><video src="230384 Small.mp4" autoplay loop muted playsinline></video>
+</div>
+<div id="wb_IconFont2">
+<a href="#" onclick="HidePanel('PanelLayer', event);return false;"><div id="IconFont2"><i class="fa fa-times"></i></div></a>
+</div>
+<div id="wb_Heading3">
+<h2 id="Heading3">EC</h2>
+</div>
+<div id="wb_OverlayMenu2">
+<div class="OverlayMenu2">
+<ul class="OverlayMenu2" role="menu">
+<li><a role="menuitem" href="./index.html" class="OverlayMenu2-effect">HOME</a></li>
+<li class="item-has-children">
+<a role="menuitem" href="#" class="OverlayMenu2-effect">MENU</a>
+<ul class="sub-menu" role="menu">
+<li><a role="menuitem" href="./Notes-&-Papers.html" class="OverlayMenu2-effect"><svg class="overlay-icon" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M61 17 C62 18, 62 20, 62 22 L52 54 C52 56, 51 57, 49 58 C48 59, 46 59, 45 59 L12 59 C10 59, 8 59, 7 58 C5 56, 4 55, 3 53 C3 51, 2 50, 3 48 C3 48, 3 48, 3 47 C3 47, 3 46, 3 46 C3 46, 3 46, 3 45 C3 45, 3 45, 3 45 C3 44, 3 44, 3 44 C3 44, 4 43, 4 43 C4 43, 4 42, 5 42 C5 41, 6 40, 6 39 C7 38, 7 36, 7 36 C7 35, 7 35, 7 34 C7 34, 7 34, 7 33 C7 33, 7 33, 8 32 C8 32, 8 32, 8 32 C9 31, 9 30, 10 28 C10 27, 11 26, 11 25 C11 25, 11 25, 11 24 C11 23, 11 23, 11 23 C11 23, 11 22, 12 22 C12 22, 12 21, 12 21 C13 21, 13 20, 14 18 C14 17, 15 16, 15 15 C15 14, 15 14, 15 14 C15 13, 15 13, 15 13 C15 13, 15 12, 15 12 C15 12, 15 12, 16 11 C16 11, 16 11, 16 11 C16 10, 17 10, 17 10 C17 9, 17 9, 17 8 C17 8, 18 7, 18 7 C18 7, 18 6, 19 6 C19 6, 19 5, 20 5 C20 5, 20 5, 21 5 C21 5, 22 5, 23 5 L22 5 C23 5, 24 5, 24 5 L51 5 C53 5, 55 5, 56 7 C57 8, 57 9, 56 11 L46 44 C46 46, 45 48, 44 49 C43 50, 41 50, 39 50 L8 50 C8 50, 7 50, 7 51 C7 51, 7 52, 7 52 C7 54, 9 55, 12 55 L45 55 C46 55, 46 55, 47 54 C48 54, 48 53, 48 53 L59 18 C59 17, 59 16, 59 16 C60 16, 61 16, 61 17 Z M23 17 C23 17, 23 18, 23 18 C23 18, 24 18, 24 18 L46 18 C46 18, 46 18, 47 18 C47 18, 47 17, 47 17 L48 15 C48 15, 48 14, 48 14 C48 14, 47 14, 47 14 L25 14 C25 14, 25 14, 25 14 C24 14, 24 15, 24 15 Z M20 26 C20 27, 20 27, 20 27 C20 27, 21 27, 21 27 L43 27 C43 27, 43 27, 44 27 C44 27, 44 27, 44 26 L45 24 C45 24, 45 23, 45 23 C45 23, 45 23, 44 23 L22 23 C22 23, 22 23, 22 23 C21 23, 21 24, 21 24"/>
+</svg>
+NOTES&nbsp;&amp;&nbsp;PAPERS</a></li>
+<li><a role="menuitem" href="./ChatRoom.html" class="OverlayMenu2-effect"><svg class="overlay-icon" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M15 19 C16 18, 16 17, 16 16 C16 15, 16 15, 15 14 C15 13, 14 13, 13 13 C12 13, 11 14, 10 14 C10 15, 9 15, 9 16 C9 17, 10 18, 10 19 C11 19, 12 20, 13 20 C14 20, 15 19, 15 19 Z M43 35 C43 34, 43 33, 42 33 C41 32, 41 32, 40 32 C39 32, 38 32, 38 33 C37 33, 37 34, 37 35 C37 35, 37 36, 38 36 C38 37, 39 37, 40 37 C41 37, 41 37, 42 36 C43 36, 43 35, 43 35 Z M34 19 C34 18, 34 17, 34 16 C34 15, 34 15, 34 14 C33 13, 32 13, 31 13 C30 13, 29 14, 29 14 C28 15, 27 15, 27 16 C27 17, 28 18, 29 19 C29 19, 30 20, 31 20 C32 20, 33 19, 34 19 Z M57 35 C57 34, 57 33, 56 33 C56 32, 55 32, 54 32 C53 32, 53 32, 52 33 C52 33, 51 34, 51 35 C51 35, 52 36, 52 36 C53 37, 53 37, 54 37 C55 37, 56 37, 56 36 C57 36, 57 35, 57 35 Z M48 20 C47 20, 46 20, 45 20 C41 20, 37 21, 34 23 C31 25, 28 27, 26 30 C24 34, 23 37, 23 41 C23 43, 23 44, 24 46 C23 46, 22 46, 22 46 C21 46, 20 46, 20 46 C19 46, 19 46, 18 46 C17 46, 17 46, 16 46 C16 46, 15 46, 14 45 C13 45, 13 45, 12 45 L3 49 L6 42 C-1 37, -4 31, -4 24 C-4 20, -3 16, -1 13 C1 10, 5 7, 9 5 C13 3, 17 2, 22 2 C26 2, 30 3, 33 5 C37 6, 40 8, 43 11 C45 14, 47 17, 48 20 Z M69 40 C69 43, 68 46, 66 48 C65 51, 63 53, 60 55 L62 62 L55 58 C51 59, 48 59, 47 59 C43 59, 39 58, 36 57 C32 55, 30 53, 28 50 C26 47, 25 44, 25 40 C25 37, 26 34, 28 31 C30 28, 32 26, 36 24 C39 22, 43 22, 47 22 C51 22, 54 22, 58 24 C61 26, 64 28, 66 31 C68 34, 69 37, 69 40"/>
+</svg>
+CHATROOM</a></li>
+<li><a role="menuitem" href="./Shop.html" class="OverlayMenu2-effect"><svg class="overlay-icon" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M24 50 C25 51, 26 52, 26 53 C26 54, 25 55, 24 56 C23 57, 22 57, 21 57 C20 57, 19 57, 18 56 C17 55, 16 54, 16 53 C16 52, 17 51, 18 50 C19 49, 20 48, 21 48 C22 48, 23 49, 24 50 Z M56 50 C57 51, 58 52, 58 53 C58 54, 57 55, 56 56 C55 57, 54 57, 53 57 C52 57, 51 57, 50 56 C49 55, 48 54, 48 53 C48 52, 49 51, 50 50 C51 49, 52 48, 53 48 C54 48, 55 49, 56 50 Z M62 14 L62 32 C62 33, 62 33, 61 34 C61 34, 61 34, 60 35 L23 39 C23 40, 23 41, 23 41 C23 42, 23 43, 22 44 L55 44 C56 44, 56 44, 57 44 C57 45, 58 45, 58 46 C58 47, 57 47, 57 48 C56 48, 56 48, 55 48 L19 48 C18 48, 18 48, 17 48 C17 47, 16 47, 16 46 C16 46, 16 45, 17 45 C17 44, 17 44, 17 44 C17 43, 18 43, 18 42 C18 42, 19 41, 19 41 L12 12 L5 12 C4 12, 4 11, 3 11 C3 11, 3 10, 3 9 C3 9, 3 8, 3 8 C4 7, 4 7, 5 7 L14 7 C14 7, 15 7, 15 7 C15 8, 16 8, 16 8 C16 8, 16 8, 16 9 C16 9, 17 9, 17 10 C17 10, 17 10, 17 11 C17 11, 17 12, 17 12 L60 12 C60 12, 61 12, 61 12 C62 13, 62 13, 62 14"/>
+</svg>
+SHOP</a></li>
+<li><a role="menuitem" href="./Links.html" class="OverlayMenu2-effect"><svg class="overlay-icon" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M50 38 L50 50 C50 52, 49 55, 47 57 C45 59, 42 60, 40 60 L10 60 C7 60, 5 59, 3 57 C1 55, 0 52, 0 50 L0 20 C0 17, 1 15, 3 13 C5 11, 7 10, 10 10 L35 10 C35 10, 36 10, 36 10 C36 10, 36 10, 36 11 L36 13 C36 13, 36 14, 36 14 C36 14, 35 14, 35 14 L10 14 C8 14, 7 15, 6 16 C5 17, 4 18, 4 20 L4 50 C4 51, 5 52, 6 54 C7 55, 8 55, 10 55 L40 55 C41 55, 43 55, 44 54 C45 52, 45 51, 45 50 L45 38 C45 38, 45 38, 46 37 C46 37, 46 37, 47 37 L49 37 C49 37, 49 37, 50 37 C50 38, 50 38, 50 38 Z M64 7 L64 26 C64 26, 63 27, 63 27 C63 28, 62 28, 61 28 C61 28, 60 28, 60 27 L53 21 L30 44 C30 44, 30 45, 29 45 C29 45, 29 44, 29 44 L24 40 C24 40, 24 40, 24 39 C24 39, 24 39, 24 38 L48 15 L41 9 C41 8, 41 8, 41 7 C41 7, 41 6, 41 6 C42 5, 42 5, 43 5 L61 5 C62 5, 63 5, 63 6 C63 6, 64 7, 64 7"/>
+</svg>
+IMPORTANT&nbsp;LINKS</a></li>
+<li><a role="menuitem" href="./Information.html" class="OverlayMenu2-effect"><svg class="overlay-icon" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M12 49 L12 53 L8 53 C7 53, 7 53, 7 53 L7 52 L5 52 C5 52, 5 52, 5 52 L5 50 C5 50, 5 50, 5 50 L7 50 L7 49 C7 49, 7 49, 8 49 Z M12 40 L12 44 L8 44 C7 44, 7 44, 7 44 L7 43 L5 43 C5 43, 5 43, 5 42 L5 41 C5 41, 5 41, 5 41 L7 41 L7 40 C7 40, 7 40, 8 40 Z M12 30 L12 35 L8 35 C7 35, 7 35, 7 34 L7 34 L5 34 C5 34, 5 34, 5 33 L5 32 C5 32, 5 32, 5 32 L7 32 L7 31 C7 31, 7 30, 8 30 Z M12 21 L12 26 L8 26 C7 26, 7 26, 7 25 L7 25 L5 25 C5 25, 5 25, 5 24 L5 23 C5 23, 5 22, 5 22 L7 22 L7 22 C7 21, 7 21, 8 21 Z M12 12 L12 17 L8 17 C7 17, 7 17, 7 16 L7 16 L5 16 C5 16, 5 15, 5 15 L5 14 C5 13, 5 13, 5 13 L7 13 L7 13 C7 12, 7 12, 8 12 Z M50 6 L50 59 C50 60, 50 61, 49 61 C49 62, 48 62, 47 62 L17 62 C16 62, 15 62, 15 61 C14 61, 14 60, 14 59 L14 6 C14 5, 14 5, 15 4 C15 3, 16 3, 17 3 L47 3 C48 3, 49 3, 49 4 C50 5, 50 5, 50 6 Z M60 50 L60 52 C60 52, 59 52, 59 52 L57 52 L57 53 C57 53, 57 53, 57 53 L53 53 L53 49 L57 49 C57 49, 57 49, 57 49 L57 50 L59 50 C59 50, 60 50, 60 50 Z M60 41 L60 42 C60 43, 59 43, 59 43 L57 43 L57 44 C57 44, 57 44, 57 44 L53 44 L53 40 L57 40 C57 40, 57 40, 57 40 L57 41 L59 41 C59 41, 60 41, 60 41 Z M60 32 L60 33 C60 34, 59 34, 59 34 L57 34 L57 34 C57 35, 57 35, 57 35 L53 35 L53 30 L57 30 C57 30, 57 31, 57 31 L57 32 L59 32 C59 32, 60 32, 60 32 Z M60 23 L60 24 C60 25, 59 25, 59 25 L57 25 L57 25 C57 26, 57 26, 57 26 L53 26 L53 21 L57 21 C57 21, 57 21, 57 22 L57 22 L59 22 C59 22, 60 23, 60 23 Z M60 14 L60 15 C60 15, 59 16, 59 16 L57 16 L57 16 C57 17, 57 17, 57 17 L53 17 L53 12 L57 12 C57 12, 57 12, 57 13 L57 13 L59 13 C59 13, 60 13, 60 14"/>
+</svg>
+INFORMATION</a></li>
+<li><a role="menuitem" href="./news.html" class="OverlayMenu2-effect"><svg class="overlay-icon" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M32 20 L19 20 L19 34 L32 34Z  M37 43 L37 48 L14 48 L14 43Z  M37 16 L37 39 L14 39 L14 16Z  M60 43 L60 48 L41 48 L41 43Z  M60 34 L60 39 L41 39 L41 34Z  M60 25 L60 29 L41 29 L41 25Z  M60 16 L60 20 L41 20 L41 16Z  M5 50 L5 16 L0 16 L0 50 C0 51, 0 51, 1 52 C1 52, 2 52, 3 52 C3 52, 4 52, 4 52 C5 51, 5 51, 5 50 Z M64 50 L64 11 L9 11 L9 50 C9 51, 9 52, 9 52 L62 52 C63 52, 63 52, 64 52 C64 51, 64 51, 64 50 Z M69 7 L69 50 C69 52, 68 54, 67 55 C65 56, 64 57, 62 57 L3 57 C1 57, -1 56, -2 55 C-4 54, -4 52, -4 50 L-4 11 L5 11 L5 7Z "/>
+</svg>
+NEWS</a></li>
+<li><a role="menuitem" href="./ChatBot.html" class="OverlayMenu2-effect"><svg class="overlay-icon" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M44 24 L55 13 L51 9 L40 20Z  M59 12 C60 12, 60 13, 60 13 C60 14, 60 14, 59 15 L14 61 C13 61, 13 61, 12 61 C11 61, 11 61, 10 61 L3 54 C3 53, 3 53, 3 52 C3 51, 3 51, 3 51 L49 5 C50 4, 50 4, 51 4 C51 4, 52 4, 52 5 Z M12 6 L15 8 L12 9 L11 12 L10 9 L6 8 L10 6 L11 3Z  M24 12 L31 14 L24 17 L22 24 L20 17 L13 14 L20 12 L22 5Z  M58 29 L61 30 L58 31 L57 35 L55 31 L52 30 L55 29 L57 26Z  M35 6 L38 8 L35 9 L34 12 L33 9 L29 8 L33 6 L34 3Z "/>
+</svg>
+EC&nbsp;AI</a></li>
+<li><a role="menuitem" href="./projects.html" class="OverlayMenu2-effect"><svg class="overlay-icon" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M54 30 L55 41 C55 43, 54 44, 52 46 C50 47, 47 48, 43 49 C40 50, 36 50, 32 50 C28 50, 24 50, 20 49 C17 48, 14 47, 12 46 C10 44, 9 43, 9 41 L10 30 L30 36 C31 36, 31 37, 32 37 C32 37, 33 36, 34 36 Z M72 17 C73 17, 73 18, 73 18 C73 19, 73 19, 72 19 L32 32 C32 32, 32 32, 32 32 C32 32, 32 32, 31 32 L8 25 C7 25, 6 27, 6 29 C5 30, 5 33, 4 35 C6 36, 7 37, 7 39 C7 40, 6 42, 5 43 L7 58 C7 58, 7 59, 6 59 C6 59, 6 59, 6 59 L-1 59 C-2 59, -2 59, -2 59 C-2 59, -3 58, -2 58 L0 43 C-2 42, -2 40, -2 39 C-2 37, -2 36, 0 35 C0 30, 1 26, 3 23 L-9 19 C-9 19, -9 19, -9 18 C-9 18, -9 17, -9 17 L31 5 C32 5, 32 5, 32 5 C32 5, 32 5, 32 5"/>
+</svg>
+PROJECTS</a></li>
+</ul>
+</li>
+<li><a role="menuitem" href="./About-Us.html" class="OverlayMenu2-effect">ABOUT</a></li>
+   </ul>
+</div>
+
+</div>
+<form name="SiteSearch1_form" id="SiteSearch1_form" role="search" accept-charset="UTF-8" onsubmit="return searchPage(features)">
+<input type="text" id="SiteSearch1" name="SiteSearch1" value="" spellcheck="false" placeholder="Search " role="searchbox"></form>
+<input type="submit" id="Button1" onclick="searchPage();return false;" name="Search" value="Search">
+</div>
+<div id="wb_LayoutGrid9">
+<div id="LayoutGrid9">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text8">
+<span style="color:#FFFFFF;font-family:Arial;font-size:20px;">© EC SCHOLAR NET 2024 All Rights Reserved.</span>
+</div>
+</div>
+<div class="col-2">
+<label for="" id="Label4">Follow us:</label>
+<div id="wb_FontAwesomeIcon6">
+<a href="https://github.com/aniket101998/eandc"><div id="FontAwesomeIcon6"><i class="fa fa-github"></i></div></a>
+</div>
+<div id="wb_FontAwesomeIcon9">
+<a href="https://www.facebook.com/profile.php?id=61570048799341"><div id="FontAwesomeIcon9"><i class="fa fa-facebook-official"></i></div></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
