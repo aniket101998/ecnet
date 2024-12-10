@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Electronic components </title>
+<meta name="generator" content="WYSIWYG Web Builder 18 - http://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/E&C.css" rel="stylesheet">
+<link href="css/Coil.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="jquery.ui.effect.min.js"></script>
+<script src="wb.panel.min.js"></script>
+<script src="wwb18.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $("a[href*='#welcome']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_welcome').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#blog']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_blog').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   function onScrollblogDividerTop()
+   {
+      var $obj = $('#blog-divider-top');
+      if (!$obj.hasClass('show') && $obj.inViewPort(false))
+      {
+         $obj.addClass('show');
+      }
+   }
+   onScrollblogDividerTop();
+   $(window).scroll(function(event)
+   {
+      onScrollblogDividerTop();
+   });
+   function onScrollblog()
+   {
+      var $obj = $("#wb_blog");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollblog();
+   $(window).scroll(function(event)
+   {
+      onScrollblog();
+   });
+   $("#PanelLayer").panel({animate: true, animationDuration: 500, animationEasing: 'easeOutCirc', dismissible: true, display: 'push', position: 'left'});
+   $('.OverlayMenu2 .item-has-children').children('a').on('click', function(event)
+   {
+      event.preventDefault();
+      $(this).toggleClass('submenu-open').next('.sub-menu').slideToggle(0,'linear').end().parent('.item-has-children').siblings('.item-has-children').children('a').removeClass('submenu-open').next('.sub-menu').slideUp(0,'linear');
+   });
+   var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+   if (iOS)
+   {
+      $('#PanelLayer').css('background-attachment', 'scroll');
+   }
+});
+</script>
+</head>
+<body>
+<div id="wb_welcome">
+<div id="welcome-divider-bottom">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 24" preserveAspectRatio="none">
+<defs>
+   <path id="wave-animated" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+</defs>
+<g class="wave-animated">
+   <use xlink:href="#wave-animated" x="48" y="0" class="divider-fill" style="opacity:0.7" />
+   <use xlink:href="#wave-animated" x="48" y="3" class="divider-fill" style="opacity:0.5" />
+   <use xlink:href="#wave-animated" x="48" y="5" class="divider-fill" style="opacity:0.3" />
+   <use xlink:href="#wave-animated" x="48" y="7" class="divider-fill"  />
+</g>
+</svg>
+</div>
+<div id="welcome">
+<div class="col-1">
+<div id="wb_welcomeText">
+<p style="font-size:16px;line-height:18px;"><span style="font-size:32px;line-height:36px;font-weight:bold;">EC SCHOLAR NET</span></p>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_blog">
+<div id="blog-divider-top">
+</div>
+<div id="blog">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_blogHeading">
+<h1 id="blogHeading">Coil<br><br></h1>
+</div>
+<div id="wb_Text1">
+<span style="color:#000000;font-family:Arial;font-size:19px;"> A coil, also known as an inductor, is an electrical component consisting of a wire wound into a spiral or helix shape. It is primarily used to store energy in a magnetic field when electrical current flows through it. Coils are commonly found in electronic circuits and serve various purposes, including filtering, energy storage, and inductive coupling. The basic principle behind a coil is electromagnetic induction, where a changing electric current generates a magnetic field, and conversely, a changing magnetic field can induce an electric current.<br><br>The inductance of a coil, measured in henries (H), determines its ability to resist changes in current. The inductance depends on factors like the number of turns in the coil, the coil's physical dimensions, and the material around which the wire is wound. A coil with more turns or a ferromagnetic core (like iron) will have higher inductance. Inductors are widely used in power supply circuits to smooth voltage, in transformers for stepping up or stepping down voltage, and in radio-frequency (RF) circuits to filter signals or tune frequencies. Coils can also act as chokes, preventing high-frequency noise from passing through a circuit.<br><br>In AC circuits, coils exhibit reactance, which is a form of resistance that depends on the frequency of the applied signal. Unlike resistors, which dissipate energy as heat, coils store energy temporarily in their magnetic fields before releasing it. The energy storage property makes coils crucial in applications like energy conversion, signal processing, and magnetic field generation in motors and transformers. Despite their usefulness, coils can suffer from losses due to resistance in the wire, known as copper loss, which limits their efficiency, especially at high frequencies.<br><br><br><br></span><span style="color:#000000;font-family:Arial;font-size:12px;"><br><br></span>
+</div>
+<div id="wb_Image1">
+<img src="images/coil.png" id="Image1" alt="" width="940" height="262">
+</div>
+<div id="wb_Heading1">
+<h1 id="Heading1"></h1>
+</div>
+<div id="wb_Heading2">
+<h1 id="Heading2">Heading</h1>
+</div>
+<a id="Button1" href="./Transformer.html">Open</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="menuLayer">
+<div id="wb_menuPanel">
+<a href="#PanelLayer" id="menuPanel">
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"></span>
+</a>
+</div>
+</div>
+<div id="upStickyLayer">
+<div id="wb_upIcon">
+<a href="#welcome"><div id="upIcon"><i class="fa fa-angle-up"></i></div></a></div>
+</div>
+<div id="PanelLayer">
+<div id="wb_IconFont2">
+<a href="#" onclick="HidePanel('PanelLayer', event);return false;"><div id="IconFont2"><i class="fa fa-times"></i></div></a>
+</div>
+<div id="wb_Heading3">
+<h2 id="Heading3">EC</h2>
+</div>
+<div id="wb_OverlayMenu2">
+<div class="OverlayMenu2">
+<ul class="OverlayMenu2" role="menu">
+<li><a role="menuitem" href="./index.html" class="OverlayMenu2-effect">HOME</a></li>
+<li class="item-has-children">
+<a role="menuitem" href="#" class="OverlayMenu2-effect">MENU</a>
+<ul class="sub-menu" role="menu">
+<li><a role="menuitem" href="./Notes-&-Papers.html" class="OverlayMenu2-effect"><svg class="overlay-icon" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M61 17 C62 18, 62 20, 62 22 L52 54 C52 56, 51 57, 49 58 C48 59, 46 59, 45 59 L12 59 C10 59, 8 59, 7 58 C5 56, 4 55, 3 53 C3 51, 2 50, 3 48 C3 48, 3 48, 3 47 C3 47, 3 46, 3 46 C3 46, 3 46, 3 45 C3 45, 3 45, 3 45 C3 44, 3 44, 3 44 C3 44, 4 43, 4 43 C4 43, 4 42, 5 42 C5 41, 6 40, 6 39 C7 38, 7 36, 7 36 C7 35, 7 35, 7 34 C7 34, 7 34, 7 33 C7 33, 7 33, 8 32 C8 32, 8 32, 8 32 C9 31, 9 30, 10 28 C10 27, 11 26, 11 25 C11 25, 11 25, 11 24 C11 23, 11 23, 11 23 C11 23, 11 22, 12 22 C12 22, 12 21, 12 21 C13 21, 13 20, 14 18 C14 17, 15 16, 15 15 C15 14, 15 14, 15 14 C15 13, 15 13, 15 13 C15 13, 15 12, 15 12 C15 12, 15 12, 16 11 C16 11, 16 11, 16 11 C16 10, 17 10, 17 10 C17 9, 17 9, 17 8 C17 8, 18 7, 18 7 C18 7, 18 6, 19 6 C19 6, 19 5, 20 5 C20 5, 20 5, 21 5 C21 5, 22 5, 23 5 L22 5 C23 5, 24 5, 24 5 L51 5 C53 5, 55 5, 56 7 C57 8, 57 9, 56 11 L46 44 C46 46, 45 48, 44 49 C43 50, 41 50, 39 50 L8 50 C8 50, 7 50, 7 51 C7 51, 7 52, 7 52 C7 54, 9 55, 12 55 L45 55 C46 55, 46 55, 47 54 C48 54, 48 53, 48 53 L59 18 C59 17, 59 16, 59 16 C60 16, 61 16, 61 17 Z M23 17 C23 17, 23 18, 23 18 C23 18, 24 18, 24 18 L46 18 C46 18, 46 18, 47 18 C47 18, 47 17, 47 17 L48 15 C48 15, 48 14, 48 14 C48 14, 47 14, 47 14 L25 14 C25 14, 25 14, 25 14 C24 14, 24 15, 24 15 Z M20 26 C20 27, 20 27, 20 27 C20 27, 21 27, 21 27 L43 27 C43 27, 43 27, 44 27 C44 27, 44 27, 44 26 L45 24 C45 24, 45 23, 45 23 C45 23, 45 23, 44 23 L22 23 C22 23, 22 23, 22 23 C21 23, 21 24, 21 24"/>
+</svg>
+NOTES&nbsp;&amp;&nbsp;PAPERS</a></li>
+<li><a role="menuitem" href="./ChatRoom.html" class="OverlayMenu2-effect"><svg class="overlay-icon" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M15 19 C16 18, 16 17, 16 16 C16 15, 16 15, 15 14 C15 13, 14 13, 13 13 C12 13, 11 14, 10 14 C10 15, 9 15, 9 16 C9 17, 10 18, 10 19 C11 19, 12 20, 13 20 C14 20, 15 19, 15 19 Z M43 35 C43 34, 43 33, 42 33 C41 32, 41 32, 40 32 C39 32, 38 32, 38 33 C37 33, 37 34, 37 35 C37 35, 37 36, 38 36 C38 37, 39 37, 40 37 C41 37, 41 37, 42 36 C43 36, 43 35, 43 35 Z M34 19 C34 18, 34 17, 34 16 C34 15, 34 15, 34 14 C33 13, 32 13, 31 13 C30 13, 29 14, 29 14 C28 15, 27 15, 27 16 C27 17, 28 18, 29 19 C29 19, 30 20, 31 20 C32 20, 33 19, 34 19 Z M57 35 C57 34, 57 33, 56 33 C56 32, 55 32, 54 32 C53 32, 53 32, 52 33 C52 33, 51 34, 51 35 C51 35, 52 36, 52 36 C53 37, 53 37, 54 37 C55 37, 56 37, 56 36 C57 36, 57 35, 57 35 Z M48 20 C47 20, 46 20, 45 20 C41 20, 37 21, 34 23 C31 25, 28 27, 26 30 C24 34, 23 37, 23 41 C23 43, 23 44, 24 46 C23 46, 22 46, 22 46 C21 46, 20 46, 20 46 C19 46, 19 46, 18 46 C17 46, 17 46, 16 46 C16 46, 15 46, 14 45 C13 45, 13 45, 12 45 L3 49 L6 42 C-1 37, -4 31, -4 24 C-4 20, -3 16, -1 13 C1 10, 5 7, 9 5 C13 3, 17 2, 22 2 C26 2, 30 3, 33 5 C37 6, 40 8, 43 11 C45 14, 47 17, 48 20 Z M69 40 C69 43, 68 46, 66 48 C65 51, 63 53, 60 55 L62 62 L55 58 C51 59, 48 59, 47 59 C43 59, 39 58, 36 57 C32 55, 30 53, 28 50 C26 47, 25 44, 25 40 C25 37, 26 34, 28 31 C30 28, 32 26, 36 24 C39 22, 43 22, 47 22 C51 22, 54 22, 58 24 C61 26, 64 28, 66 31 C68 34, 69 37, 69 40"/>
+</svg>
+CHATROOM</a></li>
+<li><a role="menuitem" href="./Links.html" class="OverlayMenu2-effect"><svg class="overlay-icon" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M50 38 L50 50 C50 52, 49 55, 47 57 C45 59, 42 60, 40 60 L10 60 C7 60, 5 59, 3 57 C1 55, 0 52, 0 50 L0 20 C0 17, 1 15, 3 13 C5 11, 7 10, 10 10 L35 10 C35 10, 36 10, 36 10 C36 10, 36 10, 36 11 L36 13 C36 13, 36 14, 36 14 C36 14, 35 14, 35 14 L10 14 C8 14, 7 15, 6 16 C5 17, 4 18, 4 20 L4 50 C4 51, 5 52, 6 54 C7 55, 8 55, 10 55 L40 55 C41 55, 43 55, 44 54 C45 52, 45 51, 45 50 L45 38 C45 38, 45 38, 46 37 C46 37, 46 37, 47 37 L49 37 C49 37, 49 37, 50 37 C50 38, 50 38, 50 38 Z M64 7 L64 26 C64 26, 63 27, 63 27 C63 28, 62 28, 61 28 C61 28, 60 28, 60 27 L53 21 L30 44 C30 44, 30 45, 29 45 C29 45, 29 44, 29 44 L24 40 C24 40, 24 40, 24 39 C24 39, 24 39, 24 38 L48 15 L41 9 C41 8, 41 8, 41 7 C41 7, 41 6, 41 6 C42 5, 42 5, 43 5 L61 5 C62 5, 63 5, 63 6 C63 6, 64 7, 64 7"/>
+</svg>
+IMPORTANT&nbsp;LINKS</a></li>
+<li><a role="menuitem" href="./Shop.html" class="OverlayMenu2-effect"><svg class="overlay-icon" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M24 50 C25 51, 26 52, 26 53 C26 54, 25 55, 24 56 C23 57, 22 57, 21 57 C20 57, 19 57, 18 56 C17 55, 16 54, 16 53 C16 52, 17 51, 18 50 C19 49, 20 48, 21 48 C22 48, 23 49, 24 50 Z M56 50 C57 51, 58 52, 58 53 C58 54, 57 55, 56 56 C55 57, 54 57, 53 57 C52 57, 51 57, 50 56 C49 55, 48 54, 48 53 C48 52, 49 51, 50 50 C51 49, 52 48, 53 48 C54 48, 55 49, 56 50 Z M62 14 L62 32 C62 33, 62 33, 61 34 C61 34, 61 34, 60 35 L23 39 C23 40, 23 41, 23 41 C23 42, 23 43, 22 44 L55 44 C56 44, 56 44, 57 44 C57 45, 58 45, 58 46 C58 47, 57 47, 57 48 C56 48, 56 48, 55 48 L19 48 C18 48, 18 48, 17 48 C17 47, 16 47, 16 46 C16 46, 16 45, 17 45 C17 44, 17 44, 17 44 C17 43, 18 43, 18 42 C18 42, 19 41, 19 41 L12 12 L5 12 C4 12, 4 11, 3 11 C3 11, 3 10, 3 9 C3 9, 3 8, 3 8 C4 7, 4 7, 5 7 L14 7 C14 7, 15 7, 15 7 C15 8, 16 8, 16 8 C16 8, 16 8, 16 9 C16 9, 17 9, 17 10 C17 10, 17 10, 17 11 C17 11, 17 12, 17 12 L60 12 C60 12, 61 12, 61 12 C62 13, 62 13, 62 14"/>
+</svg>
+SHOP</a></li>
+<li><a role="menuitem" href="./ChatBot.html" class="OverlayMenu2-effect"><svg class="overlay-icon" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M44 24 L55 13 L51 9 L40 20Z  M59 12 C60 12, 60 13, 60 13 C60 14, 60 14, 59 15 L14 61 C13 61, 13 61, 12 61 C11 61, 11 61, 10 61 L3 54 C3 53, 3 53, 3 52 C3 51, 3 51, 3 51 L49 5 C50 4, 50 4, 51 4 C51 4, 52 4, 52 5 Z M12 6 L15 8 L12 9 L11 12 L10 9 L6 8 L10 6 L11 3Z  M24 12 L31 14 L24 17 L22 24 L20 17 L13 14 L20 12 L22 5Z  M58 29 L61 30 L58 31 L57 35 L55 31 L52 30 L55 29 L57 26Z  M35 6 L38 8 L35 9 L34 12 L33 9 L29 8 L33 6 L34 3Z "/>
+</svg>
+EC&nbsp;AI</a></li>
+</ul>
+</li>
+<li><a role="menuitem" href="./About-Us.html" class="OverlayMenu2-effect">ABOUT-US</a></li>
+   </ul>
+</div>
+
+</div>
+</div>
+<div id="wb_LayoutGrid9">
+<div id="LayoutGrid9">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text8">
+<span style="color:#FFFFFF;font-family:Arial;font-size:20px;">© EC SCHOLAR NET 2024 All Rights Reserved.</span>
+</div>
+</div>
+<div class="col-2">
+<label for="" id="Label4">Follow us:</label>
+<div id="wb_FontAwesomeIcon6">
+<a href="https://github.com/aniket101998/eandc"><div id="FontAwesomeIcon6"><i class="fa fa-github"></i></div></a>
+</div>
+<div id="wb_FontAwesomeIcon9">
+<a href="https://www.facebook.com/profile.php?id=61570048799341"><div id="FontAwesomeIcon9"><i class="fa fa-facebook-official"></i></div></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

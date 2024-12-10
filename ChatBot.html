@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder 18 - http://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+<link href="css/E&C.css" rel="stylesheet">
+<link href="css/ChatBot.css" rel="stylesheet">
+</head>
+<body>
+<div id="Html1">
+<flowise-fullchatbot></flowise-fullchatbot>
+<script type="module">
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    Chatbot.initFull({
+        chatflowid: "964562da-4ea9-4aa7-8f50-3079eafbeaf3",
+        apiHost: "https://aniket1998-aniket.hf.space",
+        chatflowConfig: {
+            /* Chatflow Config */
+        },
+        observersConfig: {
+            /* Observers Config */
+        },
+        theme: {
+            button: {
+                backgroundColor: '#ffd519',
+                right: 20,
+                bottom: 20,
+                size: 48,
+                dragAndDrop: true,
+                iconColor: 'black',
+                customIconSrc:"",
+                autoWindowOpen: {
+                    autoOpen: true,
+                    openDelay: 2,
+                    autoOpenOnMobile: false
+                }
+            },
+            tooltip: {
+                showTooltip: true,
+                tooltipMessage: 'Hi There 👋!',
+                tooltipBackgroundColor: 'black',
+                tooltipTextColor: 'white',
+                tooltipFontSize: 16
+            },
+            
+            customCSS: ``,
+            chatWindow: {
+                showTitle: true,
+                showAgentMessages: true,
+                title: 'EC Buddy',
+                titleAvatarSrc: '',
+                welcomeMessage: 'Hello! How Can I Help You?',
+                errorMessage: 'This is a custom error message',
+                backgroundColor: '#fcfcfa',
+                backgroundImage: 'enter image path or link',
+                height: '100%',
+                width: '100%',
+                fontSize: 16,
+                starterPrompts: [
+                 
+                    "What is Arduino?",
+                    "Write Code On Banking System.",
+                    "How NTSC PAL SECAM System Works?"
+                  
+                ],
+                starterPromptFontSize: 15,
+                clearChatOnReload: false,
+                sourceDocsTitle: 'Sources:',
+                renderHTML: true,
+                botMessage: {
+                    backgroundColor: '#fffef7',
+                    textColor: 'black',
+                    showAvatar: false,
+                    avatarSrc: ''
+                },
+                userMessage: {
+                    backgroundColor: '#ffd519',
+                    textColor: 'black',
+                    showAvatar: false,
+                    avatarSrc: ''
+                },
+                textInput: {
+                    placeholder: 'Ask Me Anything..',
+                    backgroundColor: '#ffffff',
+                    textColor: '#303235',
+                    sendButtonColor: '#ffd519',
+                    maxChars: 50,
+                    maxCharsWarningMessage: 'You exceeded the characters limit. Please input less than 50 characters.',
+                    autoFocus: true,
+                    sendMessageSound: true,
+                    sendSoundLocation: 'send_message.mp3',
+                    receiveMessageSound: true,
+                    receiveSoundLocation: 'receive_message.mp3'
+                },
+                feedback: {
+                    color: '#303235'
+                },
+                dateTimeToggle: {
+                    date: true,
+                    time: true
+                },
+                footer: {
+                    textColor: '#303235',
+                    text: 'Devloped By',
+                    company: 'Aniket Shegamwar',
+                    companyLink: 'https://github.com/aniket101998'
+                }
+            }
+        }
+    })
+</script></div>
+</body>
+</html>
